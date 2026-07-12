@@ -478,7 +478,7 @@ export default function App() {
             {/* Direct Contact info */}
             <div className="md:col-span-4 space-y-3 text-xs leading-relaxed font-sans">
               <h5 className="text-xs font-bold text-[var(--text)] uppercase tracking-widest font-serif">{t.footerReachOut}</h5>
-              <p className="text-[var(--text-muted)]">
+              <address className="not-italic text-[var(--text-muted)]">
                 <strong>{t.footerLocation}:</strong> <br />
                 {lang === 'mr' ? (
                   <>धायरी फाटा जवळ, धायरी, पुणे, <br />महाराष्ट्र, भारत - ४११०४१</>
@@ -487,7 +487,7 @@ export default function App() {
                 ) : (
                   <>Near Dhayari Phata, Dhayari, Pune, <br />Maharashtra, India - 411041</>
                 )}
-              </p>
+              </address>
               <p className="text-[var(--text-muted)]">
                 <strong>{t.footerPhone}:</strong> <br />
                 <a href={`https://wa.me/919356614958`} target="_blank" rel="noopener noreferrer" className="text-[var(--gold)] font-mono hover:underline font-bold">

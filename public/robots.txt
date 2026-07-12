@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://swadamfoods.eu.cc/sitemap.xml
