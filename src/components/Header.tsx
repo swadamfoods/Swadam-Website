@@ -30,6 +30,15 @@ export function Header({
     setTheme(theme === 'dark' ? 'light' : 'dark');
   };
 
+  const [showGlow, setShowGlow] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowGlow(false);
+    }, 15000);
+    return () => clearTimeout(timer);
+  }, []);
+
   const handleNavClick = (section: string) => {
     setActiveSection(section);
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -103,18 +112,44 @@ export function Header({
         {/* Actions Button Bar */}
         <div className="flex items-center gap-2 sm:gap-3">
           {/* Language Switcher Dropdown */}
-          <div className="relative flex items-center gap-1 bg-white/5 border border-[var(--border)] rounded-full px-2 py-1 sm:px-2.5 sm:py-1.5 hover:border-[var(--border-hover)] transition-all">
-            <Languages className="w-3.5 h-3.5 text-[var(--text-muted)] shrink-0" />
-            <select
-              value={lang}
-              onChange={(e) => setLang(e.target.value as Language)}
-              className="bg-transparent text-[10px] sm:text-[11px] font-bold text-[var(--text)] focus:outline-none cursor-pointer pr-1"
-              aria-label="Language Selector"
-            >
-              <option value="en" className="bg-[var(--surface)] text-[var(--text)]">EN</option>
-              <option value="hi" className="bg-[var(--surface)] text-[var(--text)]">हिंदी</option>
-              <option value="mr" className="bg-[var(--surface)] text-[var(--text)]">मराठी</option>
-            </select>
+          <div className="relative group z-50">
+            {/* Animated Glow Ring */}
+            {showGlow && (
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-[var(--gold)] to-[var(--accent)] rounded-full blur opacity-30 animate-pulse pointer-events-none"></div>
+            )}
+            
+            {/* Ping Indicator */}
+            {showGlow && (
+              <span className="absolute -top-0.5 -right-0.5 flex h-2.5 w-2.5 z-10">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--gold)] opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[var(--gold)] border-[1.5px] border-[var(--surface)]"></span>
+              </span>
+            )}
+
+            {/* Popup Tooltip */}
+            <div className="absolute top-[calc(100%+12px)] right-0 flex flex-col items-end pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              {/* Up arrow */}
+              <div className={`w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-b-[6px] border-b-[var(--gold)] mr-4 ${showGlow ? 'animate-bounce' : ''} relative top-[1px]`}></div>
+              {/* Tooltip body */}
+              <div className="bg-[var(--surface)] border border-[var(--gold)]/40 shadow-[0_4_20px_rgba(212,175,55,0.15)] px-3 py-2 rounded-xl text-[10px] sm:text-[11px] font-medium text-[var(--text)] whitespace-nowrap flex items-center gap-2">
+                <span className="flex items-center justify-center bg-[var(--gold)]/10 text-[var(--gold)] w-5 h-5 rounded-full text-xs">अ</span>
+                Marathi & Hindi
+              </div>
+            </div>
+
+            <div className={`relative flex items-center gap-1 bg-[var(--surface)] border ${showGlow ? 'border-[var(--gold)]/50' : 'border-[var(--border)]'} rounded-full px-2 py-1 sm:px-2.5 sm:py-1.5 hover:border-[var(--gold)] transition-all cursor-pointer`}>
+              <Languages className={`w-3.5 h-3.5 ${showGlow ? 'text-[var(--gold)]' : 'text-[var(--text-muted)]'} shrink-0`} />
+              <select
+                value={lang}
+                onChange={(e) => setLang(e.target.value as Language)}
+                className="bg-transparent text-[10px] sm:text-[11px] font-bold text-[var(--text)] focus:outline-none cursor-pointer pr-1"
+                aria-label="Language Selector"
+              >
+                <option value="en" className="bg-[var(--surface)] text-[var(--text)]">EN</option>
+                <option value="hi" className="bg-[var(--surface)] text-[var(--text)]">हिंदी</option>
+                <option value="mr" className="bg-[var(--surface)] text-[var(--text)]">मराठी</option>
+              </select>
+            </div>
           </div>
 
           {/* Light/Dark Toggle */}

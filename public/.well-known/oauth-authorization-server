@@ -1,0 +1,10 @@
+{
+  "issuer": "https://swadamfoods.eu.cc",
+  "authorization_endpoint": "https://swadamfoods.eu.cc/oauth/authorize",
+  "token_endpoint": "https://swadamfoods.eu.cc/oauth/token",
+  "jwks_uri": "https://swadamfoods.eu.cc/oauth/jwks",
+  "grant_types_supported": ["authorization_code", "client_credentials"],
+  "agent_auth": {
+    "register_uri": "https://swadamfoods.eu.cc/oauth/register"
+  }
+}

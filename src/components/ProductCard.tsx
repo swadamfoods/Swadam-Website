@@ -34,7 +34,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, cartItems, on
     switch (product.id) {
       case 'prod-1':
         return { 
-          text: lang === 'mr' ? 'साजुक तूप' : lang === 'hi' ? 'सजुक तूप' : 'Haldi Blend', 
+          text: lang === 'mr' ? 'रिफाइंड राइस ब्रॅन ऑइल' : lang === 'hi' ? 'रिफाइंड राइस ब्रान ऑयल' : 'Haldi Blend', 
           style: { background: 'rgba(212, 175, 55, 0.3)' } 
         };
       case 'prod-2':

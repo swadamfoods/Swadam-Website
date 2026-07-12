@@ -1,0 +1,10 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://swadamfoods.eu.cc/api",
+      "service-desc": [{"href": "https://swadamfoods.eu.cc/openapi.json", "type": "application/openapi+json"}],
+      "service-doc": [{"href": "https://swadamfoods.eu.cc/docs"}],
+      "status": [{"href": "https://swadamfoods.eu.cc/api/health"}]
+    }
+  ]
+}

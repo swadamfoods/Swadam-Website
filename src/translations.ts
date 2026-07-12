@@ -14,7 +14,7 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     heroBadge: '100% Homemade Savories Prepared Fresh',
     heroTitlePart1: 'Purity in Every Bite,',
     heroTitlePart2: 'Swadam in Every Snack!',
-    heroDesc: 'Experience authentic, traditional Maharashtrian delicacies freshly prepared in Pune. Kneaded with pure cow ghee (Sajuk Tup) and premium, double-filtered oils. Completely handmade by Vidya Dandekar with absolute hygiene and premium ingredients.',
+    heroDesc: 'Experience authentic, traditional Maharashtrian delicacies freshly prepared in Pune. Kneaded with refined rice bran oil and premium, double-filtered oils. Completely handmade by Vidya Dandekar with absolute hygiene and premium ingredients.',
     btnExplore: 'Explore Collection',
     btnOurStory: 'Our Story & Bulk Inquiry',
     ratingLabel: '5.0 Star Rated',
@@ -26,7 +26,7 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     pillar2Title: 'Fresh Preparation',
     pillar2Desc: 'No stale stocks. Prepared freshly upon receiving your WhatsApp request.',
     pillar3Title: 'Premium Ingredients',
-    pillar3Desc: 'Pure wheat flour, filtered oils, pure Cow Ghee (Sajuk Tup). Zero chemicals.',
+    pillar3Desc: 'Pure wheat flour, filtered oils, refined rice bran oil. Zero chemicals.',
     pillar4Title: 'Seamless Ordering',
     pillar4Desc: 'Add packs to bag, review subtotal, then finalize on WhatsApp instantly.',
 
@@ -95,7 +95,7 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     heroBadge: '100% घर का बना ताजा नमकीन',
     heroTitlePart1: 'हर निवाले में शुद्धता,',
     heroTitlePart2: 'हर नाश्ते में स्वादम्!',
-    heroDesc: 'पुणे में ताज़ा तैयार प्रामाणिक, पारंपरिक महाराष्ट्रीयन व्यंजनों का अनुभव करें। शुद्ध गाय के घी (साजुक तूप) और प्रीमियम, डबल-फिल्टर्ड तेलों से बना। पूरी तरह से विद्या दांडेकर द्वारा पूर्ण स्वच्छता और प्रीमियम सामग्री के साथ हस्तनिर्मित।',
+    heroDesc: 'पुणे में ताज़ा तैयार प्रामाणिक, पारंपरिक महाराष्ट्रीयन व्यंजनों का अनुभव करें। रिफाइंड राइस ब्रान ऑयल और प्रीमियम, डबल-फिल्टर्ड तेलों से बना। पूरी तरह से विद्या दांडेकर द्वारा पूर्ण स्वच्छता और प्रीमियम सामग्री के साथ हस्तनिर्मित।',
     btnExplore: 'संग्रह देखें',
     btnOurStory: 'हमारी कहानी और थोक पूछताछ',
     ratingLabel: '5.0 स्टार रेटेड',
@@ -107,7 +107,7 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     pillar2Title: 'ताज़ा तैयारी',
     pillar2Desc: 'कोई पुराना स्टॉक नहीं। आपका व्हाट्सएप अनुरोध मिलने पर ताज़ा तैयार किया जाता है।',
     pillar3Title: 'प्रीमियम सामग्री',
-    pillar3Desc: 'शुद्ध गेहूं का आटा, फिल्टर्ड तेल, शुद्ध गाय का घी (साजुक तूप)। शून्य रसायन।',
+    pillar3Desc: 'शुद्ध गेहूं का आटा, फिल्टर्ड तेल, रिफाइंड राइस ब्रान ऑयल। शून्य रसायन।',
     pillar4Title: 'आसान ऑर्डरिंग',
     pillar4Desc: 'बैग में पैक जोड़ें, कुल राशि देखें, फिर तुरंत व्हाट्सएप पर ऑर्डर भेजें।',
 
@@ -176,7 +176,7 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     heroBadge: '१००% घरगुती आणि ताज्या चवीचे पदार्थ',
     heroTitlePart1: 'प्रत्येक घासात शुद्धता,',
     heroTitlePart2: 'प्रत्येक पदार्थात स्वादम्!',
-    heroDesc: 'पुण्यामध्ये ताजे तयार केलेले अस्सल, पारंपारिक महाराष्ट्रीयन खाद्यपदार्थांचा आस्वाद घ्या. शुद्ध गाईचे तूप (साजुक तूप) आणि प्रीमियम, डबल-फिल्टर तेलाने मळलेले. पूर्ण स्वच्छता आणि उत्कृष्ट साहित्य वापरून विद्या दांडेकर यांनी स्वतः घरगुती पद्धतीने तयार केलेले.',
+    heroDesc: 'पुण्यामध्ये ताजे तयार केलेले अस्सल, पारंपारिक महाराष्ट्रीयन खाद्यपदार्थांचा आस्वाद घ्या. रिफाइंड राइस ब्रॅन ऑइल आणि प्रीमियम, डबल-फिल्टर तेलाने मळलेले. पूर्ण स्वच्छता आणि उत्कृष्ट साहित्य वापरून विद्या दांडेकर यांनी स्वतः घरगुती पद्धतीने तयार केलेले.',
     btnExplore: 'खाद्यपदार्थ पहा',
     btnOurStory: 'आमची गोष्ट व घाऊक चौकशी',
     ratingLabel: '५.० स्टार मानांकन',
@@ -188,7 +188,7 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     pillar2Title: 'ताजी तयारी',
     pillar2Desc: 'शिल्लक माल नाही. तुमची व्हॉट्सॲप ऑर्डर मिळाल्यावरच ताजे आणि खमंग बनवले जाते.',
     pillar3Title: 'उत्कृष्ट साहित्य',
-    pillar3Desc: 'शुद्ध गव्हाचे पीठ, फिल्टर तेल, शुद्ध गाईचे तूप (साजुक तूप). शून्य रसायने.',
+    pillar3Desc: 'शुद्ध गव्हाचे पीठ, फिल्टर तेल, रिफाइंड राइस ब्रॅन ऑइल. शून्य रसायने.',
     pillar4Title: 'सुलभ ऑर्डर पद्धत',
     pillar4Desc: 'पिशवीत पॅक जोडा, एकूण किंमत तपासा आणि थेट व्हॉट्सॲपवर ऑर्डर द्या.',
 
@@ -250,9 +250,9 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
 export const PRODUCT_TRANSLATIONS: Record<Language, Record<string, { name: string; subtitle: string; description: string }>> = {
   en: {
     'prod-1': {
-      name: 'Salted Shankarpali (Sajuk Tup)',
-      subtitle: 'Crispy, hand-rolled savory diamonds kneaded in pure cow ghee.',
-      description: 'A traditional teatime companion, made with pure wheat flour and Sajuk Tup. Lightly salted, layered texture, and melts in your mouth.'
+      name: 'Salted Shankarpali (Rice Bran Oil)',
+      subtitle: 'Crispy, hand-rolled savory diamonds kneaded in refined rice bran oil.',
+      description: 'A traditional teatime companion, made with pure wheat flour and refined rice bran oil. Lightly salted, layered texture, and melts in your mouth.'
     },
     'prod-2': {
       name: 'Spicy Tangy Shankarpali',
@@ -267,9 +267,9 @@ export const PRODUCT_TRANSLATIONS: Record<Language, Record<string, { name: strin
   },
   hi: {
     'prod-1': {
-      name: 'नमकीन शंकरपाली (सजुक तूप)',
-      subtitle: 'शुद्ध गाय के घी में गुंथे हुए कुरकुरे, हाथ से बेले हुए नमकीन हीरे।',
-      description: 'एक पारंपरिक चाय-समय का साथी, जो शुद्ध गेहूं के आटे और साजुक तूप से बना है। हल्का नमकीन, परतदार बनावट और मुंह में पिघल जाने वाला।'
+      name: 'नमकीन शंकरपाली (रिफाइंड राइस ब्रान ऑयल)',
+      subtitle: 'रिफाइंड राइस ब्रान ऑयल में गुंथे हुए कुरकुरे, हाथ से बेले हुए नमकीन हीरे।',
+      description: 'एक पारंपरिक चाय-समय का साथी, जो शुद्ध गेहूं के आटे और रिफाइंड राइस ब्रान ऑयल से बना है। हल्का नमकीन, परतदार बनावट और मुंह में पिघल जाने वाला।'
     },
     'prod-2': {
       name: 'तीखी चटपटी शंकरपाली',
@@ -284,9 +284,9 @@ export const PRODUCT_TRANSLATIONS: Record<Language, Record<string, { name: strin
   },
   mr: {
     'prod-1': {
-      name: 'खमंग शंकरपाळे (साजुक तूप)',
-      subtitle: 'शुद्ध गाईच्या तुपात मळलेले, खुसखुशीत आणि कुरकुरीत शंकरपाळे.',
-      description: 'चहाच्या वेळेचा पारंपारिक सोबती, जो शुद्ध गव्हाचे पीठ आणि साजुक तूप वापरून बनवला आहे. हलके नमकीन, खुसखुशीत आणि जिभेवर विरघळणारे.'
+      name: 'खमंग शंकरपाळे (रिफाइंड राइस ब्रॅन ऑइल)',
+      subtitle: 'रिफाइंड राइस ब्रॅन ऑइल मध्ये मळलेले, खुसखुशीत आणि कुरकुरीत शंकरपाळे.',
+      description: 'चहाच्या वेळेचा पारंपारिक सोबती, जो शुद्ध गव्हाचे पीठ आणि रिफाइंड राइस ब्रॅन ऑइल वापरून बनवला आहे. हलके नमकीन, खुसखुशीत आणि जिभेवर विरघळणारे.'
     },
     'prod-2': {
       name: 'तिखट-मीठ शंकरपाळे (चटपटीत)',

@@ -21,7 +21,7 @@ export function AboutSection({ lang }: AboutSectionProps) {
         {
           title: '१. उत्कृष्ट साहित्याची निवड',
           icon: <Leaf className="w-5 h-5 text-emerald-400" />,
-          desc: 'आम्ही सर्वोत्कृष्ट आणि ताजे कच्चे माल निवडतो. गव्हाचे पीठ हाताने चाळले जाते आणि उत्कृष्ट कुरकुरीतपणा येण्यासाठी सुरुवातीलाच शुद्ध गाईचे तूप मळले जाते.',
+          desc: 'आम्ही सर्वोत्कृष्ट आणि ताजे कच्चे माल निवडतो. गव्हाचे पीठ हाताने चाळले जाते आणि उत्कृष्ट कुरकुरीतपणा येण्यासाठी सुरुवातीलाच रिफाइंड राइस ब्रॅन ऑइल मळले जाते.',
           highlight: 'भेसळमुक्त, फक्त शुद्ध आणि दर्जेदार साहित्य.'
         },
         {
@@ -54,7 +54,7 @@ export function AboutSection({ lang }: AboutSectionProps) {
         {
           title: '1. उत्कृष्ट सामग्री का चयन',
           icon: <Leaf className="w-5 h-5 text-emerald-400" />,
-          desc: 'हम बेहतरीन प्रीमियम कच्चे माल का चयन करते हैं। आटे को हाथ से छाना जाता है, और शुद्ध गाय का घी मिलाकर कुरकुरापन सुनिश्चित किया जाता है.',
+          desc: 'हम बेहतरीन प्रीमियम कच्चे माल का चयन करते हैं। आटे को हाथ से छाना जाता है, और रिफाइंड राइस ब्रान ऑयल मिलाकर कुरकुरापन सुनिश्चित किया जाता है.',
           highlight: 'कोई मिलावट नहीं, केवल शुद्ध सामग्रियां.'
         },
         {
@@ -66,8 +66,8 @@ export function AboutSection({ lang }: AboutSectionProps) {
         {
           title: '3. आटा गूंथना और परतें बनाना',
           icon: <Heart className="w-5 h-5 text-rose-400" />,
-          desc: 'शंकरपाली के लिए हम शुद्ध घी का मोयन डालकर आटा गूंथते हैं और उसकी परतें बनाते हैं, जिससे तलने पर बेहतरीन परतदार कुरकुरापन आता है.',
-          highlight: 'शुद्ध घी का पारंपरिक मोयन.'
+          desc: 'शंकरपाली के लिए हम रिफाइंड राइस ब्रान ऑयल का मोयन डालकर आटा गूंथते हैं और उसकी परतें बनाते हैं, जिससे तलने पर बेहतरीन परतदार कुरकुरापन आता है.',
+          highlight: 'रिफाइंड राइस ब्रान ऑयल का पारंपरिक मोयन.'
         },
         {
           title: '4. नियंत्रित बैचों में तलना',
@@ -87,7 +87,7 @@ export function AboutSection({ lang }: AboutSectionProps) {
         {
           title: '1. Ingredient Selection',
           icon: <Leaf className="w-5 h-5 text-emerald-400" />,
-          desc: 'We select the finest premium raw materials. Flour is hand-screened, and top-tier ingredients are mixed with pure Cow Ghee (Sajuk Tup) to ensure premium crispiness right from the start.',
+          desc: 'We select the finest premium raw materials. Flour is hand-screened, and top-tier ingredients are mixed with refined rice bran oil to ensure premium crispiness right from the start.',
           highlight: 'No adulteration, only pure ingredients.'
         },
         {
@@ -99,8 +99,8 @@ export function AboutSection({ lang }: AboutSectionProps) {
         {
           title: '3. Kneading & Layering',
           icon: <Heart className="w-5 h-5 text-rose-400" />,
-          desc: 'For our Salty and Tangy Shankarpali, we knead the dough using pure ghee (Moyan technique) and meticulously layer it. This creates micro-sheets in the dough that expand during frying, resulting in that classic flaky texture.',
-          highlight: 'Traditional ghee-kneading.'
+          desc: 'For our Salty and Tangy Shankarpali, we knead the dough using refined rice bran oil (Moyan technique) and meticulously layer it. This creates micro-sheets in the dough that expand during frying, resulting in that classic flaky texture.',
+          highlight: 'Refined rice bran oil kneading.'
         },
         {
           title: '4. Precision Batch Frying',
@@ -133,13 +133,13 @@ export function AboutSection({ lang }: AboutSectionProps) {
     desc2: lang === 'mr'
       ? 'तुम्ही मागवलेले प्रत्येक उत्पादन—मग तो कुरकुरीत स्पेशल चिवडा असो, साजुक तुपातील शंकरपाळे असो किंवा तिखट-मीठ शंकरपाळे असो—हे सर्व मी, विद्या दांडेकर, पूर्णपणे स्वतः हाताने तयार करते.'
       : lang === 'hi'
-      ? 'आप जो भी उत्पाद ऑर्डर करते हैं—चाहे वह कुरकुरा स्पेशल चिवड़ा हो, साजुक घी की शंकरपाली हो या चटपटी शंकरपाली—यह सब मेरे द्वारा, यानी विद्या दांडेकर द्वारा पूर्णतः हस्तनिर्मित है।'
+      ? 'आप जो भी उत्पाद ऑर्डर करते हैं—चाहे वह कुरकुरा स्पेशल चिवड़ा हो, रिफाइंड राइस ब्रान ऑयल की शंकरपाली हो या चटपटी शंकरपाली—यह सब मेरे द्वारा, यानी विद्या दांडेकर द्वारा पूर्णतः हस्तनिर्मित है।'
       : 'Every single product you order—whether the crunchy Special Chivda, the layered Salted Shankarpali, or the tongue-tickling Tangy Shankarpali—is crafted completely by hand by me, Vidya Dandekar.',
     quote: lang === 'mr'
-      ? '"एक गृहिणी म्हणून मला समजते की अन्न म्हणजे केवळ पोट भरणे नाही; ते सुरक्षा, विश्वास आणि जिव्हाळा देण्याबद्दल आहे. मी फक्त शुद्ध गाईचे तूप (साजुक तूप), प्रीमियम फिल्टर तेल आणि स्वतः निवडलेले घरगुती मसाले वापरते. मी कोणतेही रासायनिक प्रिझर्व्हेटिव्ह, रंग किंवा खायचा सोडा वापरत नाही."'
+      ? '"एक गृहिणी म्हणून मला समजते की अन्न म्हणजे केवळ पोट भरणे नाही; ते सुरक्षा, विश्वास आणि जिव्हाळा देण्याबद्दल आहे. मी फक्त रिफाइंड राइस ब्रॅन ऑइल, प्रीमियम फिल्टर तेल आणि स्वतः निवडलेले घरगुती मसाले वापरते. मी कोणतेही रासायनिक प्रिझर्व्हेटिव्ह, रंग किंवा खायचा सोडा वापरत नाही."'
       : lang === 'hi'
-      ? '"एक गृहिणी के रूप में मैं समझती हूं कि भोजन केवल पेट भरने के लिए नहीं है; यह सुरक्षा, विश्वास और स्नेह साझा करने के बारे में है। मैं केवल शुद्ध गाय का घी, प्रीमियम फिल्टर्ड तेल और हस्त-चयनित मसालों का उपयोग करती हूँ। मैं कोई रसायन या सोडा नहीं डालती।"'
-      : '"As a homemaker, I understand that food is not just about filling your stomach; it\'s about safety, trust, and sharing absolute warmth. I use only pure Cow Ghee (Sajuk Tup), premium filtered oils, and hand-selected spices. I do not add any chemical preservatives, colorants, or soda."',
+      ? '"एक गृहिणी के रूप में मैं समझती हूं कि भोजन केवल पेट भरने के लिए नहीं है; यह सुरक्षा, विश्वास और स्नेह साझा करने के बारे में है। मैं केवल रिफाइंड राइस ब्रान ऑयल, प्रीमियम फिल्टर्ड तेल और हस्त-चयनित मसालों का उपयोग करती हूँ। मैं कोई रसायन या सोडा नहीं डालती।"'
+      : '"As a homemaker, I understand that food is not just about filling your stomach; it\'s about safety, trust, and sharing absolute warmth. I use only refined rice bran oil, premium filtered oils, and hand-selected spices. I do not add any chemical preservatives, colorants, or soda."',
     quoteAuthor: lang === 'mr' ? '— विद्या दांडेकर, स्वादम् फूड्सच्या संस्थापिका' : lang === 'hi' ? '— विद्या दांडेकर, स्वादम् फूड्स की संस्थापक' : '— Vidya Dandekar, Founder of Swadam Foods',
     hygieneTitle: lang === 'mr' ? '१००% स्वच्छ' : lang === 'hi' ? '100% स्वच्छ' : '100% Hygienic',
     hygieneDesc: lang === 'mr' ? 'घरगुती किचनची खात्री' : lang === 'hi' ? 'घरेलू रसोई की शुद्धता' : 'Pure home kitchen prep',
@@ -361,19 +361,19 @@ export function AboutSection({ lang }: AboutSectionProps) {
                 {lang === 'mr' ? (
                   'स्वादम् फूड्सची स्थापना अस्सल घरगुती आणि पारंपारिक भारतीय खाद्यपदार्थांची समृद्ध परंपरा जिवंत ठेवण्याच्या ध्येयाने झाली आहे. पुण्यातील धायरी या निसर्गरम्य परिसरातून विद्या दांडेकर यांनी सुरू केलेले हे घरगुती किचन शुद्धता, उत्कृष्ट चव आणि आरोग्यासाठी अत्यंत सुरक्षित उत्पादनांसाठी ओळखले जाते. आमच्याकडे साजुक तुपातील शंकरपाळे, तिखट-मीठ शंकरपाळे आणि अत्यंत खुसखुशीत स्पेशल चिवडा पारंपारिक पद्धतीने बनवला जातो.'
                 ) : lang === 'hi' ? (
-                  'स्वादम् फूड्स की शुरुआत शुद्ध घरेलू और पारंपरिक भारतीय व्यंजनों की समृद्ध विरासत को संजोए रखने के उद्देश्य से हुई है। पुणे के धायरी क्षेत्र से संचालित, विद्या दांडेकर द्वारा स्थापित यह घरेलू रसोई शुद्धता, उत्कृष्ट स्वाद और सेहतमंद व्यंजनों के लिए प्रतिबद्ध है। हमारे साजुक घी (शुद्ध गाय का घी) की शंकरपाली, चटपटी शंकरपाली और कुरकुरा स्पेशल चिवड़ा अपनी शुद्धता के लिए पुणेभर में प्रसिद्ध है।'
+                  'स्वादम् फूड्स की शुरुआत शुद्ध घरेलू और पारंपरिक भारतीय व्यंजनों की समृद्ध विरासत को संजोए रखने के उद्देश्य से हुई है। पुणे के धायरी क्षेत्र से संचालित, विद्या दांडेकर द्वारा स्थापित यह घरेलू रसोई शुद्धता, उत्कृष्ट स्वाद और सेहतमंद व्यंजनों के लिए प्रतिबद्ध है। हमारे रिफाइंड राइस ब्रान ऑयल की शंकरपाली, चटपटी शंकरपाली और कुरकुरा स्पेशल चिवड़ा अपनी शुद्धता के लिए पुणेभर में प्रसिद्ध है।'
                 ) : (
-                  'Swadam Foods is born out of a passion to keep the rich culinary legacy of traditional Indian snacks and sweets alive. Founded by Vidya Dandekar in the scenic neighborhood of Dhayari, Pune, our home-kitchen is dedicated to crafting premium quality, healthy, and authentic savories. From our signature flaky Sajuk Tup (pure cow ghee) Shankarpali to crispy, savory Special Chivda, we offer the true homemade taste of Maharashtra.'
+                  'Swadam Foods is born out of a passion to keep the rich culinary legacy of traditional Indian snacks and sweets alive. Founded by Vidya Dandekar in the scenic neighborhood of Dhayari, Pune, our home-kitchen is dedicated to crafting premium quality, healthy, and authentic savories. From our signature flaky refined rice bran oil Shankarpali to crispy, savory Special Chivda, we offer the true homemade taste of Maharashtra.'
                 )}
               </p>
 
               <p>
                 {lang === 'mr' ? (
-                  'स्वादम् फूड्समधील प्रत्येक पदार्थ मागणीनुसार अगदी ताजा तयार केला जातो. आम्ही शंकरपाळ्यांसाठी लागणारे पीठ मोहन तंत्राचा वापर करून शुद्ध गाईच्या तुपात (साजुक तूप) मळतो, ज्यामुळे पदार्थाला अप्रतिम थर आणि तोंडात वितळणारी मऊ चव मिळते. आम्ही बाहेरून तयार मसाले आणण्याऐवजी स्वतः अख्खे मसाले भाजून घरगुती पद्धतीने कुटतो. यामुळे मसाल्यांचा खरा सुवास टिकून राहतो. आमच्या पदार्थांमध्ये कोणतेही रासायनिक प्रिझर्व्हेटिव्ह, कृत्रिम रंग किंवा खायचा सोड्याचा वापर केला जात नाही.'
+                  'स्वादम् फूड्समधील प्रत्येक पदार्थ मागणीनुसार अगदी ताजा तयार केला जातो. आम्ही शंकरपाळ्यांसाठी लागणारे पीठ मोहन तंत्राचा वापर करून रिफाइंड राइस ब्रॅन ऑइल मध्ये मळतो, ज्यामुळे पदार्थाला अप्रतिम थर आणि तोंडात वितळणारी मऊ चव मिळते. आम्ही बाहेरून तयार मसाले आणण्याऐवजी स्वतः अख्खे मसाले भाजून घरगुती पद्धतीने कुटतो. यामुळे मसाल्यांचा खरा सुवास टिकून राहतो. आमच्या पदार्थांमध्ये कोणतेही रासायनिक प्रिझर्व्हेटिव्ह, कृत्रिम रंग किंवा खायचा सोड्याचा वापर केला जात नाही.'
                 ) : lang === 'hi' ? (
-                  'हमारा मानना है कि खाने का असली आनंद उसकी ताजगी में है। इसीलिए स्वादम् फूड्स पर हर ऑर्डर पूरी तरह ताजा तैयार किया जाता है। मैदे में शुद्ध गाय के घी का गर्म मोयन (Moyan technique) मिलाकर आटा गूंथने से लेकर मसालों को भूनने तक, हर प्रक्रिया हाथ से की जाती है। हम बाहर से खरीदे गए मसालों के बजाय विद्या दांडेकर द्वारा हस्त-चयनित और पीसे गए मसालों का उपयोग करते हैं। हमारे उत्पादों में किसी भी प्रकार का कृत्रिम रंग, रासायनिक संरक्षक या सोडा नहीं मिलाया जाता।'
+                  'हमारा मानना है कि खाने का असली आनंद उसकी ताजगी में है। इसीलिए स्वादम् फूड्स पर हर ऑर्डर पूरी तरह ताजा तैयार किया जाता है। मैदे में रिफाइंड राइस ब्रान ऑयल का गर्म मोयन (Moyan technique) मिलाकर आटा गूंथने से लेकर मसालों को भूनने तक, हर प्रक्रिया हाथ से की जाती है। हम बाहर से खरीदे गए मसालों के बजाय विद्या दांडेकर द्वारा हस्त-चयनित और पीसे गए मसालों का उपयोग करते हैं। हमारे उत्पादों में किसी भी प्रकार का कृत्रिम रंग, रासायनिक संरक्षक या सोडा नहीं मिलाया जाता।'
                 ) : (
-                  'Every item at Swadam Foods is prepared fresh on order in small batches. We hand-knead flour using traditional techniques such as "Moyan" (infusing warm pure cow ghee into dough) to achieve that signature melt-in-the-mouth layered crispiness. Instead of using generic pre-packaged commercial spices, Vidya Dandekar hand-roasts whole spices and grinds them herself. We believe in absolute purity, which means zero chemical preservatives, zero artificial colors, and zero baking soda.'
+                  'Every item at Swadam Foods is prepared fresh on order in small batches. We hand-knead flour using traditional techniques such as "Moyan" (infusing warm refined rice bran oil into dough) to achieve that signature melt-in-the-mouth layered crispiness. Instead of using generic pre-packaged commercial spices, Vidya Dandekar hand-roasts whole spices and grinds them herself. We believe in absolute purity, which means zero chemical preservatives, zero artificial colors, and zero baking soda.'
                 )}
               </p>
 
@@ -381,7 +381,7 @@ export function AboutSection({ lang }: AboutSectionProps) {
                 {lang === 'mr' ? (
                   'तुमच्या रोजच्या चहाची वेळ आनंददायी करायची असो, किंवा घरगुती समारंभ, लग्नाची ऑर्डर, कॉर्पोरेट इव्हेंट्स, वाढदिवस, किंवा दिवाळी-गणेशोत्सवाचा पारंपारिक फराळ असो; स्वादम् फूड्स हा तुमचा हक्काचा सोबती आहे. आम्ही संपूर्ण पुणे आणि धायरी परिसरामध्ये ताजी आणि सुरक्षित डिलिव्हरी देतो. प्रत्येक ऑर्डर ग्राहकांच्या वैयक्तिक गरजेनुसार आणि पूर्ण काळजीने पॅक केली जाते.'
                 ) : lang === 'hi' ? (
-                  'दैनिक चाय के नाश्ते से लेकर शादी-ब्याह, जन्मदिन, त्योहारों, और पुणे में कॉर्पोरेट गिफ्टिंग या फेस्टिवल फराळ बॉक्स के लिए स्वादम् फूड्स आपका भरोसेमंद साथी है। हम पुणे के हर कोने और धायरी क्षेत्र में शुद्धता और घर जैसा स्नेह पहुंचाते हैं। ग्राहकों की पसंद के अनुसार मसाले और घी की मात्रा को भी संतुलित किया जा सकता है।'
+                  'दैनिक चाय के नाश्ते से लेकर शादी-ब्याह, जन्मदिन, त्योहारों, और पुणे में कॉर्पोरेट गिफ्टिंग या फेस्टिवल फराळ बॉक्स के लिए स्वादम् फूड्स आपका भरोसेमंद साथी है। हम पुणे के हर कोने और धायरी क्षेत्र में शुद्धता और घर जैसा स्नेह पहुंचाते हैं। ग्राहकों की पसंद के अनुसार मसाले और तेल की मात्रा को भी संतुलित किया जा सकता है।'
                 ) : (
                   'Whether you are looking for classic snacks for your daily tea-time, bulk catering for family celebrations, wedding orders, birthdays, corporate events in Pune, or festive faral boxes for Diwali and Ganesh Chaturthi, Swadam Foods is your trusted partner. We deliver across Dhayari, Sinhagad Road, and all areas of Pune, Maharashtra, ensuring that every package arrives with the same homemade warmth and fresh, long-lasting crunchiness.'
                 )}
@@ -404,9 +404,9 @@ export function AboutSection({ lang }: AboutSectionProps) {
                   <Check className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-[var(--text)] font-semibold">
-                      {lang === 'mr' ? '१००% साजुक तूप (Cow Ghee):' : lang === 'hi' ? '100% शुद्ध गाय का घी:' : '100% Pure Cow Ghee (Sajuk Tup):'}
+                      {lang === 'mr' ? '१००% रिफाइंड राइस ब्रॅन ऑइल:' : lang === 'hi' ? '100% रिफाइंड राइस ब्रान ऑयल:' : '100% Refined Rice Bran Oil:'}
                     </strong>{' '}
-                    {lang === 'mr' ? 'शून्य डालडा किंवा कृत्रिम बटर. आम्ही फक्त शुद्ध गाईचे तूप वापरतो.' : lang === 'hi' ? 'शून्य डालडा या कृत्रिम मक्खन। हम केवल शुद्ध गाय का घी उपयोग करते हैं।' : 'Zero vanaspati or artificial butter. We use only high-grade cow ghee for that natural rich aroma.'}
+                    {lang === 'mr' ? 'शून्य डालडा किंवा कृत्रिम बटर. आम्ही फक्त शुद्ध रिफाइंड राइस ब्रॅन ऑइल वापरतो, जे हृदयाच्या आरोग्यासाठी उत्तम असून त्यात नॅचरल अँटीऑक्सिडंट्स (oryzanol) असतात. यामुळे पदार्थाला हलकेपणा येतो.' : lang === 'hi' ? 'शून्य डालडा या कृत्रिम मक्खन। हम केवल शुद्ध रिफाइंड राइस ब्रान ऑयल उपयोग करते हैं, जो हृदय के लिए स्वस्थ है, प्राकृतिक एंटीऑक्सिडेंट (oryzanol) प्रदान करता है, और स्नैक्स को हल्का रखता है।' : 'Zero vanaspati or artificial butter. We use only high-grade refined rice bran oil because it is heart-healthy, rich in natural antioxidants like oryzanol, and ensures our snacks remain light and non-greasy.'}
                   </div>
                 </li>
 

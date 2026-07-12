@@ -1,0 +1,6 @@
+{
+  "version": "1.0",
+  "agents": {
+    "order_endpoint": "https://swadamfoods.eu.cc/api/acp/order"
+  }
+}

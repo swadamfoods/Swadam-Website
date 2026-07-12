@@ -1,0 +1,14 @@
+{
+  "serverInfo": {
+    "name": "Swadam Foods MCP",
+    "version": "1.0.0"
+  },
+  "transport": {
+    "type": "sse",
+    "endpoint": "https://swadamfoods.eu.cc/mcp"
+  },
+  "capabilities": {
+    "resources": true,
+    "tools": true
+  }
+}

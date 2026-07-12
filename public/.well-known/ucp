@@ -1,0 +1,5 @@
+{
+  "protocol": "UCP",
+  "version": "1.0",
+  "commerce_endpoint": "https://swadamfoods.eu.cc/api/commerce"
+}

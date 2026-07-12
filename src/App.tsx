@@ -392,10 +392,10 @@ export default function App() {
               </div>
               <p className="text-xs text-[var(--text-muted)] leading-relaxed max-w-sm font-sans">
                 {lang === 'mr' 
-                  ? 'पुण्यामध्ये शुद्ध साजूक तूप आणि उत्कृष्ट साहित्य वापरून अत्यंत स्वच्छ वातावरणात तयार केलेले अस्सल घरगुती महाराष्ट्रीयन चहाच्या वेळचे पदार्थ.' 
+                  ? 'पुण्यामध्ये रिफाइंड राइस ब्रॅन ऑइल आणि उत्कृष्ट साहित्य वापरून अत्यंत स्वच्छ वातावरणात तयार केलेले अस्सल घरगुती महाराष्ट्रीयन चहाच्या वेळचे पदार्थ.' 
                   : lang === 'hi' 
-                  ? 'पुणे में शुद्ध साजूक तूप और प्रीमियम सामग्री का उपयोग करके पूर्ण स्वच्छता के साथ तैयार किए गए असली घर के बने महाराष्ट्रीयन चाय के समय के नाश्ते।' 
-                  : 'Authentic, home-cooked Maharashtrian tea-time snacks prepared under strict hygiene guidelines using pure Sajuk Tup ghee and premium ingredients in Pune.'}
+                  ? 'पुणे में रिफाइंड राइस ब्रान ऑयल और प्रीमियम सामग्री का उपयोग करके पूर्ण स्वच्छता के साथ तैयार किए गए असली घर के बने महाराष्ट्रीयन चाय के समय के नाश्ते।' 
+                  : 'Authentic, home-cooked Maharashtrian tea-time snacks prepared under strict hygiene guidelines using refined rice bran oil and premium ingredients in Pune.'}
               </p>
             </div>
 

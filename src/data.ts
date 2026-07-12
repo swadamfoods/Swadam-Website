@@ -12,8 +12,8 @@ export const SNACK_PRODUCTS: SnackProduct[] = [
   {
     id: 'prod-1',
     name: 'Salted Shankarpali',
-    description: 'Delicate, multilayered, and exquisitely flaky dough crispies prepared with pure ghee and sea salt.',
-    longDescription: 'Our Salted Shankarpali is made using a generations-old rolling and folding technique. By hand-kneading premium flour with pure ghee, we achieve distinct crisp layers that shatter beautifully with every single bite.',
+    description: 'Delicate, multilayered, and exquisitely flaky dough crispies prepared with refined rice bran oil and sea salt.',
+    longDescription: 'Our Salted Shankarpali is made using a generations-old rolling and folding technique. By hand-kneading premium flour with refined rice bran oil, we achieve distinct crisp layers that shatter beautifully with every single bite.',
     pricing: [
       { weight: 'Pocket pack(100gm)', price: 65 },
       { weight: 'Regular pack(200gm)', price: 120 },
@@ -32,12 +32,12 @@ export const SNACK_PRODUCTS: SnackProduct[] = [
     fallbackVideoUrl: 'https://assets.mixkit.co/videos/preview/mixkit-frying-crispy-snacks-in-a-wok-34444-large.mp4',
     ingredients: [
       'Premium Flour',
-      'Pure Ghee',
+      'Refined Rice Bran Oil',
       'Organic Rock Salt',
       'Cold-pressed Oil'
     ],
     keyHighlights: [
-      'Pure Ghee',
+      'Refined Rice Bran Oil',
       'No Maida-Bleach'
     ]
   },
@@ -64,7 +64,7 @@ export const SNACK_PRODUCTS: SnackProduct[] = [
     fallbackVideoUrl: 'https://assets.mixkit.co/videos/preview/mixkit-pouring-spices-on-food-40241-large.mp4',
     ingredients: [
       'Premium Flour',
-      'Ghee',
+      'Refined Rice Bran Oil',
       'Amchur',
       'Black Salt',
       'Cayenne',
@@ -134,7 +134,7 @@ export const TESTIMONIALS: Testimonial[] = [
     name: 'Meera Kulkarni',
     location: 'Dhayari, Pune',
     rating: 5,
-    comment: 'Since Vidya tai lives right here in Dhayari, I ordered Salty Shankarpali for a family function. They were so fresh and flaky. You can smell the purity of Sajuk Tup (ghee) the moment you open the packet. Outstanding work!',
+    comment: 'Since Vidya tai lives right here in Dhayari, I ordered Salty Shankarpali for a family function. They were so fresh and flaky. You can smell the purity of Refined Rice Bran Oil the moment you open the packet. Outstanding work!',
     date: 'May 2026'
   }
 ];
@@ -158,6 +158,6 @@ export const FAQS = [
   },
   {
     q: 'What is the shelf life of these snacks?',
-    a: 'Since we use premium double-filtered oils, pure ghee, and do not add any artificial preservatives, our Poha Chivda lasts beautifully for 4-6 weeks, and Shankarpali lasts for 3-4 weeks when stored in an airtight container in a cool, dry place.'
+    a: 'Since we use refined rice bran oil and do not add any artificial preservatives, our Poha Chivda lasts beautifully for 4-6 weeks, and Shankarpali lasts for 3-4 weeks when stored in an airtight container in a cool, dry place.'
   }
 ];

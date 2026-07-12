@@ -90,6 +90,29 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('modelContext' in navigator) {
+        navigator.modelContext.provideContext({
+          name: "swadam-foods",
+          description: "Order traditional Indian snacks from Swadam Foods",
+          tools: [
+            {
+              name: "view_menu",
+              description: "View the available snacks and namkeen menu.",
+              inputSchema: { type: "object", properties: {} },
+              execute: async () => {
+                return {
+                  content: [{
+                    type: "text",
+                    text: "Available items: 1) Salted Shankarpali 2) Tangy Shankarpali 3) Special Chivda."
+                  }]
+                };
+              }
+            }
+          ]
+        });
+      }
+    </script>
   </body>
 </html>
 

@@ -44,7 +44,7 @@ export function ProductProfile({ product, cartItems, onAddToCart, onBack, lang }
             origin: 'घरगुती किचन, पुणे',
             shelfLife: '३० दिवस',
             prepMethod: 'हाताने लाटलेले आणि तळलेले',
-            purityBadges: ['शुद्ध गाईचे तूप', 'बिना ब्लीच मैदा']
+            purityBadges: ['रिफाइंड राइस ब्रॅन ऑइल', 'बिना ब्लीच मैदा']
           };
         case 'prod-2':
           return {
@@ -87,7 +87,7 @@ export function ProductProfile({ product, cartItems, onAddToCart, onBack, lang }
             origin: 'घरेलू रसोई, पुणे',
             shelfLife: '30 दिन',
             prepMethod: 'हाथ से बेला और तला हुआ',
-            purityBadges: ['शुद्ध गाय का घी', 'बिना मैदा-ब्लीच']
+            purityBadges: ['रिफाइंड राइस ब्रान ऑयल', 'बिना मैदा-ब्लीच']
           };
         case 'prod-2':
           return {
@@ -131,7 +131,7 @@ export function ProductProfile({ product, cartItems, onAddToCart, onBack, lang }
             origin: 'Home-kitchen, Pune',
             shelfLife: '30 Days',
             prepMethod: 'Hand-rolled & Fried',
-            purityBadges: ['Pure Ghee', 'No Maida-Bleach']
+            purityBadges: ['Refined Rice Bran Oil', 'No Maida-Bleach']
           };
         case 'prod-2':
           return {
@@ -202,15 +202,15 @@ export function ProductProfile({ product, cartItems, onAddToCart, onBack, lang }
   const getLocalizedIngredients = () => {
     if (lang === 'mr') {
       switch (product.id) {
-        case 'prod-1': return ['शुद्ध गव्हाचे पीठ', 'शुद्ध गाईचे तूप (साजुक तूप)', 'हलके चवीचे मीठ', 'डबल-फिल्टर केलेले तेल'];
-        case 'prod-2': return ['उत्कृष्ट गव्हाचे पीठ', 'शुद्ध तूप', 'आमचूर पावडर', 'लाल मिरची पावडर', 'सेंद्रिय साखर', 'चाट मसाला'];
+        case 'prod-1': return ['शुद्ध गव्हाचे पीठ', 'रिफाइंड राइस ब्रॅन ऑइल', 'हलके चवीचे मीठ', 'डबल-फिल्टर केलेले तेल'];
+        case 'prod-2': return ['उत्कृष्ट गव्हाचे पीठ', 'रिफाइंड राइस ब्रॅन ऑइल', 'आमचूर पावडर', 'लाल मिरची पावडर', 'सेंद्रिय साखर', 'चाट मसाला'];
         case 'prod-3': return ['पातळ भाजके पोहे', 'भाजलेले काजू', 'शेंगदाणे', 'सुके खोबरे काप', 'कढीपत्ता', 'हिरवी मिरची', 'हळद', 'विशेष पुणेरी मसाले'];
         default: return product.ingredients;
       }
     } else if (lang === 'hi') {
       switch (product.id) {
-        case 'prod-1': return ['शुद्ध गेहूं का आटा', 'शुद्ध गाय का घी (साजुक तूप)', 'हल्का नमक', 'डबल-फिल्टर्ड तेल'];
-        case 'prod-2': return ['प्रीमियम गेहूं का आटा', 'शुद्ध घी', 'अमचूर पाउडर', 'लाल मिर्च पाउडर', 'जैविक चीनी', 'चाट मसाला'];
+        case 'prod-1': return ['शुद्ध गेहूं का आटा', 'रिफाइंड राइस ब्रान ऑयल', 'हल्का नमक', 'डबल-फिल्टर्ड तेल'];
+        case 'prod-2': return ['प्रीमियम गेहूं का आटा', 'रिफाइंड राइस ब्रान ऑयल', 'अमचूर पाउडर', 'लाल मिर्च पाउडर', 'जैविक चीनी', 'चाट मसाला'];
         case 'prod-3': return ['पतले भुने हुए पोहे', 'रोस्टेड काजू', 'मूंगफली', 'सूखा नारियल', 'हरी मिर्च', 'कढ़ी पत्ता', 'हल्दी', 'विशेष पुणेरी मसाला'];
         default: return product.ingredients;
       }
