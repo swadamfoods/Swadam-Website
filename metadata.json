@@ -1,0 +1,6 @@
+{
+  "name": "Swadam Foods",
+  "description": "Authentic homemade Indian snacks including Poha Chivda, Salty Shankarpali, and Tangy Shankarpali, handcrafted by Vidya Dandekar in Dhayari, Pune. Easy ordering via WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
