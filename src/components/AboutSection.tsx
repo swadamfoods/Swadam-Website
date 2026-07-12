@@ -331,6 +331,132 @@ export function AboutSection({ lang }: AboutSectionProps) {
         </div>
       </section>
 
+      {/* Deep Culinary Heritage SEO Article Section */}
+      <section className="max-w-6xl mx-auto px-4 py-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="md:col-span-2 space-y-6">
+            <div className="inline-flex items-center gap-1.5 bg-[var(--accent)]/10 text-[var(--accent)] px-3.5 py-1 rounded-full text-xs font-bold border border-[var(--accent)]/20">
+              <Award className="w-3.5 h-3.5 text-[var(--gold)]" />
+              <span>
+                {lang === 'mr' 
+                  ? 'अस्सल पुणेरी फराळ आणि घरगुती चव' 
+                  : lang === 'hi' 
+                    ? 'असली पुणेरी स्वाद और घरेलू मिठास' 
+                    : 'Authentic Pune Snacking Heritage'}
+              </span>
+            </div>
+
+            <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[var(--text)] tracking-wide">
+              {lang === 'mr' ? (
+                <>महाराष्ट्राची समृद्ध खाद्यपरंपरा: <br /><span className="text-[var(--gold)] italic font-medium">स्वादम् फूड्सचा पुण्यातील चवदार प्रवास</span></>
+              ) : lang === 'hi' ? (
+                <>महाराष्ट्र की समृद्ध खाद्य परंपरा: <br /><span className="text-[var(--gold)] italic font-medium">स्वादम् फूड्स का पुणे में लजीज सफर</span></>
+              ) : (
+                <>Deep-Rooted Snacking Traditions of Maharashtra: <br /><span className="text-[var(--gold)] italic font-medium">The Culinary Journey of Swadam Foods in Pune</span></>
+              )}
+            </h3>
+
+            <div className="space-y-4 text-[var(--text-muted)] text-sm leading-relaxed font-sans">
+              <p>
+                {lang === 'mr' ? (
+                  'स्वादम् फूड्सची स्थापना अस्सल घरगुती आणि पारंपारिक भारतीय खाद्यपदार्थांची समृद्ध परंपरा जिवंत ठेवण्याच्या ध्येयाने झाली आहे. पुण्यातील धायरी या निसर्गरम्य परिसरातून विद्या दांडेकर यांनी सुरू केलेले हे घरगुती किचन शुद्धता, उत्कृष्ट चव आणि आरोग्यासाठी अत्यंत सुरक्षित उत्पादनांसाठी ओळखले जाते. आमच्याकडे साजुक तुपातील शंकरपाळे, तिखट-मीठ शंकरपाळे आणि अत्यंत खुसखुशीत स्पेशल चिवडा पारंपारिक पद्धतीने बनवला जातो.'
+                ) : lang === 'hi' ? (
+                  'स्वादम् फूड्स की शुरुआत शुद्ध घरेलू और पारंपरिक भारतीय व्यंजनों की समृद्ध विरासत को संजोए रखने के उद्देश्य से हुई है। पुणे के धायरी क्षेत्र से संचालित, विद्या दांडेकर द्वारा स्थापित यह घरेलू रसोई शुद्धता, उत्कृष्ट स्वाद और सेहतमंद व्यंजनों के लिए प्रतिबद्ध है। हमारे साजुक घी (शुद्ध गाय का घी) की शंकरपाली, चटपटी शंकरपाली और कुरकुरा स्पेशल चिवड़ा अपनी शुद्धता के लिए पुणेभर में प्रसिद्ध है।'
+                ) : (
+                  'Swadam Foods is born out of a passion to keep the rich culinary legacy of traditional Indian snacks and sweets alive. Founded by Vidya Dandekar in the scenic neighborhood of Dhayari, Pune, our home-kitchen is dedicated to crafting premium quality, healthy, and authentic savories. From our signature flaky Sajuk Tup (pure cow ghee) Shankarpali to crispy, savory Special Chivda, we offer the true homemade taste of Maharashtra.'
+                )}
+              </p>
+
+              <p>
+                {lang === 'mr' ? (
+                  'स्वादम् फूड्समधील प्रत्येक पदार्थ मागणीनुसार अगदी ताजा तयार केला जातो. आम्ही शंकरपाळ्यांसाठी लागणारे पीठ मोहन तंत्राचा वापर करून शुद्ध गाईच्या तुपात (साजुक तूप) मळतो, ज्यामुळे पदार्थाला अप्रतिम थर आणि तोंडात वितळणारी मऊ चव मिळते. आम्ही बाहेरून तयार मसाले आणण्याऐवजी स्वतः अख्खे मसाले भाजून घरगुती पद्धतीने कुटतो. यामुळे मसाल्यांचा खरा सुवास टिकून राहतो. आमच्या पदार्थांमध्ये कोणतेही रासायनिक प्रिझर्व्हेटिव्ह, कृत्रिम रंग किंवा खायचा सोड्याचा वापर केला जात नाही.'
+                ) : lang === 'hi' ? (
+                  'हमारा मानना है कि खाने का असली आनंद उसकी ताजगी में है। इसीलिए स्वादम् फूड्स पर हर ऑर्डर पूरी तरह ताजा तैयार किया जाता है। मैदे में शुद्ध गाय के घी का गर्म मोयन (Moyan technique) मिलाकर आटा गूंथने से लेकर मसालों को भूनने तक, हर प्रक्रिया हाथ से की जाती है। हम बाहर से खरीदे गए मसालों के बजाय विद्या दांडेकर द्वारा हस्त-चयनित और पीसे गए मसालों का उपयोग करते हैं। हमारे उत्पादों में किसी भी प्रकार का कृत्रिम रंग, रासायनिक संरक्षक या सोडा नहीं मिलाया जाता।'
+                ) : (
+                  'Every item at Swadam Foods is prepared fresh on order in small batches. We hand-knead flour using traditional techniques such as "Moyan" (infusing warm pure cow ghee into dough) to achieve that signature melt-in-the-mouth layered crispiness. Instead of using generic pre-packaged commercial spices, Vidya Dandekar hand-roasts whole spices and grinds them herself. We believe in absolute purity, which means zero chemical preservatives, zero artificial colors, and zero baking soda.'
+                )}
+              </p>
+
+              <p>
+                {lang === 'mr' ? (
+                  'तुमच्या रोजच्या चहाची वेळ आनंददायी करायची असो, किंवा घरगुती समारंभ, लग्नाची ऑर्डर, कॉर्पोरेट इव्हेंट्स, वाढदिवस, किंवा दिवाळी-गणेशोत्सवाचा पारंपारिक फराळ असो; स्वादम् फूड्स हा तुमचा हक्काचा सोबती आहे. आम्ही संपूर्ण पुणे आणि धायरी परिसरामध्ये ताजी आणि सुरक्षित डिलिव्हरी देतो. प्रत्येक ऑर्डर ग्राहकांच्या वैयक्तिक गरजेनुसार आणि पूर्ण काळजीने पॅक केली जाते.'
+                ) : lang === 'hi' ? (
+                  'दैनिक चाय के नाश्ते से लेकर शादी-ब्याह, जन्मदिन, त्योहारों, और पुणे में कॉर्पोरेट गिफ्टिंग या फेस्टिवल फराळ बॉक्स के लिए स्वादम् फूड्स आपका भरोसेमंद साथी है। हम पुणे के हर कोने और धायरी क्षेत्र में शुद्धता और घर जैसा स्नेह पहुंचाते हैं। ग्राहकों की पसंद के अनुसार मसाले और घी की मात्रा को भी संतुलित किया जा सकता है।'
+                ) : (
+                  'Whether you are looking for classic snacks for your daily tea-time, bulk catering for family celebrations, wedding orders, birthdays, corporate events in Pune, or festive faral boxes for Diwali and Ganesh Chaturthi, Swadam Foods is your trusted partner. We deliver across Dhayari, Sinhagad Road, and all areas of Pune, Maharashtra, ensuring that every package arrives with the same homemade warmth and fresh, long-lasting crunchiness.'
+                )}
+              </p>
+            </div>
+          </div>
+
+          <div className="space-y-6">
+            {/* Quick Keyword Highlights Cards */}
+            <div className="bg-white/5 p-6 rounded-[24px] border border-[var(--border)] space-y-4">
+              <h4 className="font-serif text-base font-bold text-[var(--text)] flex items-center gap-2">
+                <Leaf className="w-4 h-4 text-[var(--gold)]" />
+                <span>
+                  {lang === 'mr' ? 'शुद्धतेचे ३ नियम' : lang === 'hi' ? 'शुद्धता के 3 नियम' : 'Our Purity Checklist'}
+                </span>
+              </h4>
+
+              <ul className="space-y-3.5 text-xs text-[var(--text-muted)] font-sans">
+                <li className="flex gap-2.5">
+                  <Check className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                  <div>
+                    <strong className="text-[var(--text)] font-semibold">
+                      {lang === 'mr' ? '१००% साजुक तूप (Cow Ghee):' : lang === 'hi' ? '100% शुद्ध गाय का घी:' : '100% Pure Cow Ghee (Sajuk Tup):'}
+                    </strong>{' '}
+                    {lang === 'mr' ? 'शून्य डालडा किंवा कृत्रिम बटर. आम्ही फक्त शुद्ध गाईचे तूप वापरतो.' : lang === 'hi' ? 'शून्य डालडा या कृत्रिम मक्खन। हम केवल शुद्ध गाय का घी उपयोग करते हैं।' : 'Zero vanaspati or artificial butter. We use only high-grade cow ghee for that natural rich aroma.'}
+                  </div>
+                </li>
+
+                <li className="flex gap-2.5">
+                  <Check className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                  <div>
+                    <strong className="text-[var(--text)] font-semibold">
+                      {lang === 'mr' ? 'केमिकल किंवा प्रिजर्व्हेटिव्ह नाही:' : lang === 'hi' ? 'कोई संरक्षक या रसायन नहीं:' : 'No Chemical Preservatives:'}
+                    </strong>{' '}
+                    {lang === 'mr' ? 'पदार्थ दीर्घकाळ ताजे राहण्यासाठी आम्ही कोणतीही कृत्रिम रसायने घालत नाही.' : lang === 'hi' ? 'ताजगी बनाए रखने के लिए कोई हानिकारक रसायन या प्रिजर्वेटिव नहीं मिलाए जाते।' : 'We do not add any chemicals or additives. Airtight food-grade packing preserves natural shelf life.'}
+                  </div>
+                </li>
+
+                <li className="flex gap-2.5">
+                  <Check className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                  <div>
+                    <strong className="text-[var(--text)] font-semibold">
+                      {lang === 'mr' ? 'ताजे आणि आरोग्यदायी साहित्य:' : lang === 'hi' ? 'ताजा और सेहतमंद सामग्री:' : 'Fresh & Handpicked Ingredients:'}
+                    </strong>{' '}
+                    {lang === 'mr' ? 'दररोज सकाळी फ्रेश बॅचेस तयार होतात. तेल कधीही दुसऱ्यांदा तापवले जात नाही.' : lang === 'hi' ? 'प्रतिदिन सुबह ताजी बैच तैयार की जाती है। तेल को कभी दोबारा इस्तेमाल नहीं किया जाता।' : 'Prepared fresh daily in a super-clean home-kitchen. We never reuse frying oil.'}
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            {/* Local business summary widget for search engine context */}
+            <div className="bg-[var(--accent)]/5 p-6 rounded-[24px] border border-[var(--border)] space-y-3.5">
+              <h4 className="font-serif text-sm font-bold text-[var(--gold)]">
+                {lang === 'mr' ? 'अधिकृत संपर्क आणि माहिती' : lang === 'hi' ? 'आधिकारिक संपर्क एवं जानकारी' : 'Official Swadam Foods Registry'}
+              </h4>
+
+              <div className="space-y-2 text-xs text-[var(--text-muted)] font-sans">
+                <p>
+                  <strong>{lang === 'mr' ? 'मालक:' : lang === 'hi' ? 'संचालक:' : 'Owner:'}</strong> Vidya Dandekar (विद्या दांडेकर)
+                </p>
+                <p>
+                  <strong>{lang === 'mr' ? 'पत्ता:' : lang === 'hi' ? 'पता:' : 'Location Address:'}</strong> Near Dhayari Phata, Dhayari, Pune, Maharashtra, India - 411041
+                </p>
+                <p>
+                  <strong>{lang === 'mr' ? 'फोन / व्हॉट्सॲप:' : lang === 'hi' ? 'फ़ोन / व्हाट्सएप:' : 'Phone / WhatsApp:'}</strong> +91 88888 51522 / +91 93566 14958
+                </p>
+                <p>
+                  <strong>{lang === 'mr' ? 'कार्यक्षेत्र:' : lang === 'hi' ? 'सेवा क्षेत्र:' : 'Service Area:'}</strong> Dhayari, Sinhagad Road, Kothrud, Deccan, Camp, Wakad, Baner, and all areas of Pune City.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Embedded Bulk Inquiry Form */}
       <BulkInquiryForm lang={lang} />
 
