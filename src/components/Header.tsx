@@ -47,7 +47,7 @@ export function Header({
           onClick={() => handleNavClick('home')}
         >
           <img 
-            src="/swadam-logo.jpg" 
+            src="/swadam-logo.png" 
             alt="Swadam Foods Logo" 
             className="h-10 w-10 rounded-full border border-[var(--border)] bg-[#fffcf9] object-contain p-0.5"
             onError={(e) => {

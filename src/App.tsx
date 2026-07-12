@@ -19,7 +19,6 @@ import { ProductCard } from './components/ProductCard';
 import { ProductProfile } from './components/ProductProfile';
 import { BasketDrawer } from './components/BasketDrawer';
 import { AboutSection } from './components/AboutSection';
-import { AdminGuide } from './components/AdminGuide';
 import { ImageWithFallback } from './components/ImageWithFallback';
 
 import { SNACK_PRODUCTS, TESTIMONIALS, WHATSAPP_NUMBER, BUSINESS_EMAIL, INSTAGRAM_ID, INSTAGRAM_URL } from './data';
@@ -220,17 +219,8 @@ export default function App() {
                         </button>
                       </div>
 
-                      {/* Ratings ribbon */}
+                      {/* Trusted ribbon */}
                       <div className="pt-4 flex flex-wrap justify-center lg:justify-start items-center gap-6 text-[var(--text-muted)] text-xs">
-                        <div className="flex items-center gap-1.5">
-                          <div className="flex text-[var(--gold)]">
-                            {[1, 2, 3, 4, 5].map((i) => (
-                              <Star key={i} className="w-4.5 h-4.5 fill-[var(--gold)] text-[var(--gold)]" />
-                            ))}
-                          </div>
-                          <span className="font-bold text-[var(--text)]">{t.ratingLabel}</span>
-                        </div>
-                        <div className="hidden sm:block opacity-35">|</div>
                         <div className="flex items-center gap-1.5">
                           <Heart className="w-4 h-4 text-[var(--accent)] fill-[var(--accent)] animate-pulse" />
                           <span>{t.lovedByPune}</span>
@@ -242,7 +232,7 @@ export default function App() {
                     <div className="lg:col-span-5 flex justify-center relative">
                       <div className="glass-hero-card">
                         <img 
-                          src="/swadam-logo.jpg" 
+                          src="/swadam-logo.png" 
                           alt="Swadam Foods Logo Circular Display"
                           onError={(e) => {
                             (e.currentTarget as HTMLImageElement).src = "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&h=400&fit=crop&q=80";
@@ -292,59 +282,6 @@ export default function App() {
                       </div>
 
                     </div>
-                  </div>
-                </section>
-
-                {/* Word of mouth reviews hub */}
-                <section className="max-w-6xl mx-auto px-4 py-8">
-                  <div className="text-center max-w-xl mx-auto mb-12">
-                    <span className="text-xs font-bold text-[var(--accent)] uppercase tracking-[2px] block mb-2 font-sans">{t.reviewsHeading}</span>
-                    <h2 className="font-serif text-3xl font-bold text-[var(--text)] tracking-wide">{t.reviewsTitle}</h2>
-                    <p className="text-xs text-[var(--text-muted)] mt-2">
-                      {t.reviewsSubtitle}
-                    </p>
-                  </div>
-
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    {TESTIMONIALS.map((test) => (
-                      <div 
-                        key={test.id}
-                        className="p-6 rounded-[20px] bg-[var(--surface)] border border-[var(--border)] flex flex-col justify-between space-y-4 shadow-sm hover:border-[var(--border-hover)] transition-all"
-                      >
-                        <div className="space-y-3">
-                          <div className="flex text-[var(--gold)]">
-                            {Array.from({ length: test.rating }).map((_, i) => (
-                              <Star key={i} className="w-4 h-4 fill-[var(--gold)] text-[var(--gold)]" />
-                            ))}
-                          </div>
-                          <p className="text-[var(--text-muted)] text-xs sm:text-sm leading-relaxed italic">
-                            "{
-                              lang === 'mr' ? (
-                                test.id === 't1' ? 'स्वादम् फूड्सचा पोहा चिवडा अगदी आमच्या आजीने बनवल्यासारखा वाटतो. खूपच हलका, कमी तेल असलेला आणि हिरव्या मिरच्या व शेंगदाण्यांचे प्रमाण अगदी परिपूर्ण आहे. नक्की वापरून पहा!' :
-                                test.id === 't2' ? 'तिखट-मीठ शंकरपाळे म्हणजे एक उत्कृष्ट कलाकृतीच आहे! माझ्या मुलांना हे चटकदार कोटिंग खूप आवडते. आमच्या रोजच्या संध्याकाळच्या चहाचा हा मुख्य सोबती झाला आहे. व्हॉट्सॲपवरून ऑर्डर देणे खूप जलद आणि सोपे होते.' :
-                                'विद्या ताई स्वतः धायरीमध्ये राहतात, त्यामुळे मी आमच्या घरच्या कार्यक्रमासाठी खमंग शंकरपाळे मागवले होते. ते खूपच ताजे आणि खुसखुशीत होते. पाकीट उघडताच शुद्ध साजूक तुपाचा सुवास घरभर पसरतो. अप्रतिम काम!'
-                              ) : lang === 'hi' ? (
-                                test.id === 't1' ? 'स्वादम् फूड्स का पोहा चिवड़ा बिल्कुल वैसे ही स्वाद देता है जैसे मेरी दादी बनाती थीं। यह बहुत ही हल्का है, इसमें बहुत कम तेल का उपयोग होता है, और हरी मिर्च तथा मूंगफली का संतुलन एकदम सही है। अत्यधिक अनुशंसित!' :
-                                test.id === 't2' ? 'चटपटी शंकरपाली वास्तव में एक उत्कृष्ट रचना है! मेरे बच्चों को इसकी तीखी-मीठी कोटिंग बहुत पसंद है। यह हमारे दैनिक शाम की चाय का साथी बन गया है। व्हाट्सएप के माध्यम से ऑर्डर करने की प्रक्रिया अविश्वसनीय रूप से तेज और आसान थी।' :
-                                'चूंकि विद्या ताई धायरी में ही रहती हैं, इसलिए मैंने एक पारिवारिक समारोह के लिए नमकीन शंकरपाली का ऑर्डर दिया था। वे बहुत ताजे और कुरकुरे थे। पैकेट खोलते ही शुद्ध गाय के घी (सजुक तूप) की महक आ जाती है। उत्कृष्ट कार्य!'
-                              ) : test.comment
-                            }"
-                          </p>
-                        </div>
-
-                        <div className="flex justify-between items-center pt-3 border-t border-white/5 text-[11px] text-[var(--text-muted)]">
-                          <div>
-                            <span className="font-serif font-bold text-[var(--text)] block text-xs">{test.name}</span>
-                            <span className="block mt-0.5 opacity-70">
-                              {lang === 'mr' ? (test.location === 'Kothrud, Pune' ? 'कोथरूड, पुणे' : test.location === 'Baner, Pune' ? 'बाणेर, पुणे' : 'धायरी, पुणे') : lang === 'hi' ? (test.location === 'Kothrud, Pune' ? 'कोथरुड, पुणे' : test.location === 'Baner, Pune' ? 'बानेर, पुणे' : 'धायरी, पुणे') : test.location}
-                            </span>
-                          </div>
-                          <span className="font-medium opacity-60">
-                            {lang === 'mr' ? (test.date.includes('June') ? 'जून २०२६' : test.date.includes('July') ? 'जुलै २०२६' : 'मे २०२६') : lang === 'hi' ? (test.date.includes('June') ? 'जून २०२६' : test.date.includes('July') ? 'जुलाई २०२६' : 'मई २०२६') : test.date}
-                          </span>
-                        </div>
-                      </div>
-                    ))}
                   </div>
                 </section>
               </div>
@@ -421,7 +358,6 @@ export default function App() {
             {activeSection === 'heritage' && (
               <div>
                 <AboutSection lang={lang} />
-                <AdminGuide />
               </div>
             )}
           </motion.div>
@@ -439,7 +375,7 @@ export default function App() {
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full overflow-hidden border border-[var(--border)] bg-white p-0.5 flex items-center justify-center shrink-0">
                   <img
-                    src="/swadam-logo.jpg"
+                    src="/swadam-logo.png"
                     alt="Swadam Foods circular footer logo"
                     className="w-full h-full object-contain rounded-full"
                     onError={(e) => {
