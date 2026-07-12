@@ -76,7 +76,16 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, cartItems, on
       viewport={{ once: true, margin: '-40px' }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
       onClick={onClickCard}
-      className="glass-product-card group border border-[var(--border)] rounded-[24px] overflow-hidden flex flex-col h-full bg-[var(--surface)] backdrop-blur-xl cursor-pointer hover:-translate-y-1.5 hover:border-[var(--border-hover)] transition-all duration-350 hover:shadow-[0_20px_40px_var(--shadow)]"
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          onClickCard();
+        }
+      }}
+      tabIndex={0}
+      role="button"
+      aria-label={`${prodTrans.name} - ${lang === 'mr' ? 'तपशील पाहण्यासाठी क्लिक करा' : lang === 'hi' ? 'विवरण देखने के लिए क्लिक करें' : 'Click to view product details'}`}
+      className="glass-product-card group border border-[var(--border)] rounded-[24px] overflow-hidden flex flex-col h-full bg-[var(--surface)] backdrop-blur-xl cursor-pointer hover:-translate-y-1.5 hover:border-[var(--border-hover)] transition-all duration-350 hover:shadow-[0_20px_40px_var(--shadow)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]"
     >
       {/* Product Image Visual area */}
       <div className="h-[260px] relative overflow-hidden">

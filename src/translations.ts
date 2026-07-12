@@ -79,6 +79,7 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     footerLocation: 'Kitchen Location',
     footerPhone: 'WhatsApp / Phone',
     footerEmail: 'Email Address',
+    footerInstagram: 'Instagram',
     footerPrepInfo: '⏰ Preparation: prepared fresh on your booking'
   },
   hi: {
@@ -159,6 +160,7 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     footerLocation: 'रसोई का पता',
     footerPhone: 'व्हाट्सएप / फोन',
     footerEmail: 'ईमेल पता',
+    footerInstagram: 'इंस्टाग्राम',
     footerPrepInfo: '⏰ तैयारी: आपके बुक करने पर ताजा तैयार'
   },
   mr: {
@@ -239,6 +241,7 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     footerLocation: 'किचनचे ठिकाण',
     footerPhone: 'व्हॉट्सॲप / फोन',
     footerEmail: 'ईमेल पत्ता',
+    footerInstagram: 'इंस्टाग्राम',
     footerPrepInfo: '⏰ तयारी: तुमच्या ऑर्डरनुसार ताजे बनवले जाते'
   }
 };

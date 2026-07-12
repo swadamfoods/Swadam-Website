@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { X, Trash2, Plus, Minus, ShoppingBag, Send, Check, ChevronLeft, ArrowRight } from 'lucide-react';
+import { X, Trash2, Plus, Minus, ShoppingBag, Send, Check, ChevronLeft, ArrowRight, AlertCircle } from 'lucide-react';
 import { CartItem, SnackWeight } from '../types';
 import { ImageWithFallback } from './ImageWithFallback';
 import { WHATSAPP_URL_NUMBER } from '../data';
@@ -30,11 +30,13 @@ export function BasketDrawer({
   const [deliveryMethod, setDeliveryMethod] = useState<'pickup' | 'dunzo' | 'courier'>('pickup');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isCheckingOut, setIsCheckingOut] = useState(false);
+  const [errorMsg, setErrorMsg] = useState('');
 
   // Reset checkout step when drawer closes or cart is empty
   useEffect(() => {
     if (!isOpen || cartItems.length === 0) {
       setIsCheckingOut(false);
+      setErrorMsg('');
     }
   }, [isOpen, cartItems.length]);
 
@@ -45,6 +47,30 @@ export function BasketDrawer({
   const handleSendOrder = (e: React.FormEvent) => {
     e.preventDefault();
     if (cartItems.length === 0) return;
+    setErrorMsg('');
+
+    const trimmedName = customerName.trim();
+    if (trimmedName.length < 2) {
+      setErrorMsg(
+        lang === 'mr' 
+          ? 'कृपया तुमचे नाव लिहा (कमीतकमी २ अक्षरे).' 
+          : lang === 'hi' 
+            ? 'कृपया अपना नाम लिखें (कम से कम 2 अक्षर)।' 
+            : 'Please enter a valid name (at least 2 characters).'
+      );
+      return;
+    }
+
+    if (deliveryMethod !== 'pickup' && deliveryAddress.trim().length < 5) {
+      setErrorMsg(
+        lang === 'mr' 
+          ? 'कृपया वितरणासाठी पूर्ण पत्ता आणि पिनकोड लिहा.' 
+          : lang === 'hi' 
+            ? 'कृपया डिलीवरी के लिए पूरा डाक पता और पिनकोड लिखें।' 
+            : 'Please enter a complete delivery address.'
+      );
+      return;
+    }
 
     setIsSubmitting(true);
 
@@ -167,7 +193,7 @@ export function BasketDrawer({
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
             transition={{ type: 'spring', damping: 26, stiffness: 220 }}
-            className="fixed top-0 right-0 bottom-0 w-full max-w-md bg-[rgba(15,10,8,0.85)] dark:bg-[rgba(15,10,8,0.85)] light:bg-[rgba(255,252,249,0.95)] backdrop-blur-3xl z-50 shadow-2xl border-l border-[var(--border)] flex flex-col h-full text-[var(--text)] transition-colors duration-300"
+            className="fixed top-0 right-0 bottom-0 w-full max-w-md bg-[var(--surface)] backdrop-blur-3xl z-50 shadow-2xl border-l border-[var(--border)] flex flex-col h-full text-[var(--text)] transition-colors duration-300"
           >
             {/* Header */}
             <div className="p-6 border-b border-[var(--border)] flex items-center justify-between">
@@ -312,6 +338,24 @@ export function BasketDrawer({
                   {/* Delivery Details Input Form */}
                   <form id="checkout-form" onSubmit={handleSendOrder} className="space-y-4">
                     <h4 className="text-[10px] font-bold uppercase tracking-widest text-[var(--text-muted)]">{t.basketDetailsTitle}</h4>
+                    
+                    {errorMsg && (
+                      <motion.div
+                        initial={{ opacity: 0, y: -5 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        className="p-3 bg-rose-950/40 text-rose-300 rounded-xl border border-rose-500/25 flex items-start gap-2.5 text-[11px]"
+                      >
+                        <AlertCircle className="w-4 h-4 text-rose-400 shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-bold text-rose-200">
+                            {lang === 'mr' ? 'चुकीची माहिती!' : lang === 'hi' ? 'त्रुटि!' : 'Required Info'}
+                          </p>
+                          <p className="text-rose-400/90 leading-relaxed mt-0.5">
+                            {errorMsg}
+                          </p>
+                        </div>
+                      </motion.div>
+                    )}
                     
                     {/* Name field */}
                     <div>

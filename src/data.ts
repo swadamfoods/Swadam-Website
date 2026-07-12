@@ -3,6 +3,8 @@ import { SnackProduct, Testimonial } from './types';
 export const WHATSAPP_NUMBER = '+91 88888 51522';
 export const WHATSAPP_URL_NUMBER = '918888851522'; // international format for wa.me links
 export const BUSINESS_EMAIL = 'swadamfoodsindia@gmail.com';
+export const INSTAGRAM_ID = '@swadamfoodsindia';
+export const INSTAGRAM_URL = 'https://www.instagram.com/swadamfoodsindia/';
 export const BUSINESS_OWNER = 'Vidya Dandekar';
 export const BUSINESS_LOCATION = 'Dhayari, Pune, Maharashtra';
 

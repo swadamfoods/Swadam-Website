@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import { Send, CheckCircle2, MessageSquare, HelpCircle, ArrowRight } from 'lucide-react';
+import { Send, CheckCircle2, MessageSquare, HelpCircle, ArrowRight, AlertCircle } from 'lucide-react';
 import { WHATSAPP_URL_NUMBER, WHATSAPP_NUMBER } from '../data';
 import { Language } from '../translations';
 
@@ -16,6 +16,7 @@ export function BulkInquiryForm({ lang }: BulkInquiryFormProps) {
   const [purpose, setPurpose] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [errorMsg, setErrorMsg] = useState('');
 
   // Dynamic localization dictionary
   const tForm = {
@@ -74,7 +75,46 @@ export function BulkInquiryForm({ lang }: BulkInquiryFormProps) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!name || !phone || !quantity) return;
+    setErrorMsg('');
+
+    const trimmedName = name.trim();
+    const trimmedPhone = phone.trim();
+    const trimmedQuantity = quantity.trim();
+
+    if (trimmedName.length < 2) {
+      setErrorMsg(
+        lang === 'mr' 
+          ? 'कृपया तुमचे नाव लिहा (कमीतकमी २ अक्षरे).' 
+          : lang === 'hi' 
+            ? 'कृपया अपना नाम लिखें (कम से कम 2 अक्षर)।' 
+            : 'Please enter a valid name (at least 2 characters).'
+      );
+      return;
+    }
+
+    // Support Indian (+91/0) or international formats, min 10 digits
+    const phoneDigits = trimmedPhone.replace(/\D/g, '');
+    if (phoneDigits.length < 10) {
+      setErrorMsg(
+        lang === 'mr' 
+          ? 'कृपया १० अंकी वैध फोन नंबर लिहा.' 
+          : lang === 'hi' 
+            ? 'कृपया 10 अंकों का वैध फोन नंबर लिखें।' 
+            : 'Please enter a valid 10-digit phone number.'
+      );
+      return;
+    }
+
+    if (trimmedQuantity.length < 1) {
+      setErrorMsg(
+        lang === 'mr' 
+          ? 'कृपया अंदाजे वजन किंवा नग लिहा.' 
+          : lang === 'hi' 
+            ? 'कृपया अनुमानित मात्रा या वजन दर्ज करें।' 
+            : 'Please enter an estimated quantity or weight.'
+      );
+      return;
+    }
 
     setIsSubmitting(true);
 
@@ -196,6 +236,24 @@ export function BulkInquiryForm({ lang }: BulkInquiryFormProps) {
                       <p className="font-bold text-emerald-200">{tForm.successTitle}</p>
                       <p className="text-[11px] text-emerald-400/80 font-normal mt-0.5">
                         {tForm.successDesc} <strong>{WHATSAPP_NUMBER}</strong>.
+                      </p>
+                    </div>
+                  </motion.div>
+                )}
+
+                {errorMsg && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="mb-6 p-4 bg-rose-950/40 text-rose-300 rounded-2xl border border-rose-500/25 flex items-start gap-3 text-xs"
+                  >
+                    <AlertCircle className="w-5 h-5 text-rose-400 shrink-0 mt-0.5" />
+                    <div>
+                      <p className="font-bold text-rose-200">
+                        {lang === 'mr' ? 'चुकीची माहिती!' : lang === 'hi' ? 'त्रुटि!' : 'Validation Error'}
+                      </p>
+                      <p className="text-[11px] text-rose-400/80 font-normal mt-0.5">
+                        {errorMsg}
                       </p>
                     </div>
                   </motion.div>

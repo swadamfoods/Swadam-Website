@@ -22,7 +22,7 @@ import { AboutSection } from './components/AboutSection';
 import { AdminGuide } from './components/AdminGuide';
 import { ImageWithFallback } from './components/ImageWithFallback';
 
-import { SNACK_PRODUCTS, TESTIMONIALS, WHATSAPP_NUMBER, BUSINESS_EMAIL } from './data';
+import { SNACK_PRODUCTS, TESTIMONIALS, WHATSAPP_NUMBER, BUSINESS_EMAIL, INSTAGRAM_ID, INSTAGRAM_URL } from './data';
 import { SnackProduct, SnackWeight, CartItem } from './types';
 import { Language, TRANSLATIONS } from './translations';
 
@@ -77,17 +77,6 @@ export default function App() {
   useEffect(() => {
     localStorage.setItem('swadam_lang', lang);
   }, [lang]);
-
-  // Disable right-clicking anywhere on the website
-  useEffect(() => {
-    const handleContextMenu = (e: MouseEvent) => {
-      e.preventDefault();
-    };
-    document.addEventListener('contextmenu', handleContextMenu);
-    return () => {
-      document.removeEventListener('contextmenu', handleContextMenu);
-    };
-  }, []);
 
   // Scroll to Top visibility
   useEffect(() => {
@@ -509,6 +498,12 @@ export default function App() {
                 <strong>{t.footerEmail}:</strong> <br />
                 <a href={`mailto:${BUSINESS_EMAIL}`} className="text-[var(--gold)] font-mono hover:underline font-bold">
                   {BUSINESS_EMAIL}
+                </a>
+              </p>
+              <p className="text-[var(--text-muted)]">
+                <strong>{t.footerInstagram || 'Instagram'}:</strong> <br />
+                <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="text-[var(--gold)] font-mono hover:underline font-bold">
+                  {INSTAGRAM_ID}
                 </a>
               </p>
               <p className="text-[10px] text-[var(--accent)] font-semibold uppercase tracking-wider">

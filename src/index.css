@@ -46,6 +46,10 @@
   --blob-3: rgba(143, 168, 130, 0.1);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
   background-color: var(--bg);
