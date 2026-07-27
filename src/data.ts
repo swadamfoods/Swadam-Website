@@ -5,6 +5,10 @@ export const WHATSAPP_URL_NUMBER = '918888851522'; // international format for w
 export const BUSINESS_EMAIL = 'swadamfoodsindia@gmail.com';
 export const INSTAGRAM_ID = '@swadamfoodsindia';
 export const INSTAGRAM_URL = 'https://www.instagram.com/swadamfoodsindia/';
+export const FACEBOOK_URL = 'https://www.facebook.com/swadamfoodsindia';
+export const TWITTER_URL = 'https://x.com/swadamfoods';
+export const YOUTUBE_URL = 'https://www.youtube.com/@swadamfoodsindia';
+export const LINKEDIN_URL = 'https://www.linkedin.com/company/swadamfoods';
 export const BUSINESS_OWNER = 'Vidya Dandekar';
 export const BUSINESS_LOCATION = 'Dhayari, Pune, Maharashtra';
 

@@ -131,7 +131,7 @@ export function AboutSection({ lang }: AboutSectionProps) {
       ? 'स्वादम् फूड्स में आपका स्वागत है! धायरी, पुणे के शांत इलाके से हम उत्कृष्ट, प्रामाणिक भारतीय घरेलू नमकीन तैयार करते हैं। पारिवारिक समारोहों और त्योहारों के लिए स्वादिष्ट फराळ बनाने से शुरू हुआ यह सफर अब एक पसंदीदा ब्रांड बन गया है।'
       : 'Welcome to Swadam Foods! Based in the peaceful neighborhood of Dhayari, Pune, Maharashtra, we manufacture premium, authentic Indian savory snacks. What started as preparing delicious snacks for family gatherings and festive farals has now blossomed into a beloved local brand, bringing joy to homes across Pune.',
     desc2: lang === 'mr'
-      ? 'तुम्ही मागवलेले प्रत्येक उत्पादन—मग तो कुरकुरीत स्पेशल चिवडा असो, साजुक तुपातील शंकरपाळे असो किंवा तिखट-मीठ शंकरपाळे असो—हे सर्व मी, विद्या दांडेकर, पूर्णपणे स्वतः हाताने तयार करते.'
+      ? 'तुम्ही मागवलेले प्रत्येक उत्पादन—मग तो कुरकुरीत स्पेशल चिवडा असो, रिफाइंड राइस ब्रॅन ऑइल मधील शंकरपाळे असो किंवा तिखट-मीठ शंकरपाळे असो—हे सर्व मी, विद्या दांडेकर, पूर्णपणे स्वतः हाताने तयार करते.'
       : lang === 'hi'
       ? 'आप जो भी उत्पाद ऑर्डर करते हैं—चाहे वह कुरकुरा स्पेशल चिवड़ा हो, रिफाइंड राइस ब्रान ऑयल की शंकरपाली हो या चटपटी शंकरपाली—यह सब मेरे द्वारा, यानी विद्या दांडेकर द्वारा पूर्णतः हस्तनिर्मित है।'
       : 'Every single product you order—whether the crunchy Special Chivda, the layered Salted Shankarpali, or the tongue-tickling Tangy Shankarpali—is crafted completely by hand by me, Vidya Dandekar.',

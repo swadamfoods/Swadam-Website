@@ -21,7 +21,7 @@ import { BasketDrawer } from './components/BasketDrawer';
 import { AboutSection } from './components/AboutSection';
 import { ImageWithFallback } from './components/ImageWithFallback';
 
-import { SNACK_PRODUCTS, TESTIMONIALS, WHATSAPP_NUMBER, BUSINESS_EMAIL, INSTAGRAM_ID, INSTAGRAM_URL } from './data';
+import { SNACK_PRODUCTS, TESTIMONIALS, WHATSAPP_NUMBER, BUSINESS_EMAIL, INSTAGRAM_ID, INSTAGRAM_URL, FACEBOOK_URL, TWITTER_URL, YOUTUBE_URL, LINKEDIN_URL } from './data';
 import { SnackProduct, SnackWeight, CartItem } from './types';
 import { Language, TRANSLATIONS } from './translations';
 
@@ -442,6 +442,26 @@ export default function App() {
                   {INSTAGRAM_ID}
                 </a>
               </p>
+              <div className="pt-2">
+                <p className="text-[10px] uppercase tracking-wider font-bold text-[var(--text-muted)] mb-2">Connect With Us:</p>
+                <div className="flex items-center gap-3 text-base">
+                  <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="text-[var(--text-muted)] hover:text-pink-500 transition-colors" title="Instagram">
+                    <i className="fa-brands fa-instagram"></i>
+                  </a>
+                  <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" className="text-[var(--text-muted)] hover:text-blue-500 transition-colors" title="Facebook">
+                    <i className="fa-brands fa-facebook"></i>
+                  </a>
+                  <a href={TWITTER_URL} target="_blank" rel="noopener noreferrer" className="text-[var(--text-muted)] hover:text-sky-400 transition-colors" title="X / Twitter">
+                    <i className="fa-brands fa-x-twitter"></i>
+                  </a>
+                  <a href={YOUTUBE_URL} target="_blank" rel="noopener noreferrer" className="text-[var(--text-muted)] hover:text-red-500 transition-colors" title="YouTube">
+                    <i className="fa-brands fa-youtube"></i>
+                  </a>
+                  <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer" className="text-[var(--text-muted)] hover:text-blue-600 transition-colors" title="LinkedIn">
+                    <i className="fa-brands fa-linkedin"></i>
+                  </a>
+                </div>
+              </div>
               <p className="text-[10px] text-[var(--accent)] font-semibold uppercase tracking-wider">
                 {t.footerPrepInfo}
               </p>
