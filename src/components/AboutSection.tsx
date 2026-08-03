@@ -2,7 +2,8 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Award, ShieldCheck, Flame, Leaf, ArrowRight, Heart, Calendar, Check, Users } from 'lucide-react';
 import { ImageWithFallback } from './ImageWithFallback';
-import { BUSINESS_OWNER, BUSINESS_LOCATION } from '../data';
+import { FssaiLogo } from './FssaiLogo';
+import { BUSINESS_OWNER, BUSINESS_LOCATION, FSSAI_NUMBER } from '../data';
 import { BulkInquiryForm } from './BulkInquiryForm';
 import { FAQSection } from './FAQSection';
 import { Language } from '../translations';
@@ -31,10 +32,10 @@ export function AboutSection({ lang }: AboutSectionProps) {
           highlight: 'पिढ्यानपिढ्या चालत आलेली अस्सल मराठी रेसिपी.'
         },
         {
-          title: '३. मळणे आणि लाटणे',
+          title: '३. पोहा भाजणे व फोडणी',
           icon: <Heart className="w-5 h-5 text-rose-400" />,
-          desc: 'शंकरपाळ्यांसाठी आम्ही मोहन तंत्र वापरून रिफाइंड राइस ब्रॅन ऑइल मध्ये पीठ मळतो आणि त्याचे बारीक थर देतो. यामुळे तळताना शंकरपाळे छान खुसखुशीत आणि थरदार होतात.',
-          highlight: 'रिफाइंड राइस ब्रॅन ऑइल चे मोहन.'
+          desc: 'कागदी पातळ पोहे मंद आचेवर कढईत खमंग भाजले जातात. नंतर १००% रिफाइंड राइस ब्रॅन ऑइल मध्ये काजू, शेंगदाणे, खोबरे काप, हिरवी मिरची व कढीपत्त्याची खमंग फोडणी देऊन चिवड्यात मिसळले जाते.',
+          highlight: '१००% रिफाइंड राइस ब्रॅन ऑइल मधील फोडणी.'
         },
         {
           title: '४. नियंत्रित तळण्याची पद्धत',
@@ -64,10 +65,10 @@ export function AboutSection({ lang }: AboutSectionProps) {
           highlight: 'पीढ़ियों पुरानी पारंपरिक मराठी रेसिपी.'
         },
         {
-          title: '3. आटा गूंथना और परतें बनाना',
+          title: '3. पोहा भूनना और तड़का',
           icon: <Heart className="w-5 h-5 text-rose-400" />,
-          desc: 'शंकरपाली के लिए हम रिफाइंड राइस ब्रान ऑयल का मोयन डालकर आटा गूंथते हैं और उसकी परतें बनाते हैं, जिससे तलने पर बेहतरीन परतदार कुरकुरापन आता है.',
-          highlight: 'रिफाइंड राइस ब्रान ऑयल का पारंपरिक मोयन.'
+          desc: 'कागजी पतले पोहे को धीमी आंच पर कुरकुरा होने तक भुना जाता है। फिर 100% रिफाइंड राइस ब्रान ऑयल में साबुत काजू, मूंगफली, नारियल के टुकड़े, हरी मिर्च और कढ़ी पत्ता का तड़का लगाकर मिलाया जाता है.',
+          highlight: '100% रिफाइंड राइस ब्रान ऑयल का ताज़ा तड़का.'
         },
         {
           title: '4. नियंत्रित बैचों में तलना',
@@ -97,10 +98,10 @@ export function AboutSection({ lang }: AboutSectionProps) {
           highlight: 'Generational Marathi spice recipe.'
         },
         {
-          title: '3. Kneading & Layering',
+          title: '3. Gentle Roasting & Tempering',
           icon: <Heart className="w-5 h-5 text-rose-400" />,
-          desc: 'For our Salty and Tangy Shankarpali, we knead the dough using refined rice bran oil (Moyan technique) and meticulously layer it. This creates micro-sheets in the dough that expand during frying, resulting in that classic flaky texture.',
-          highlight: 'Refined rice bran oil kneading.'
+          desc: 'Paper-thin flaked rice is gently pan-roasted on low flame for crispiness. We then temper whole cashews, roasted peanuts, dry coconut, green chillies, and curry leaves in 100% refined rice bran oil and toss thoroughly.',
+          highlight: '100% Refined Rice Bran Oil tempering.'
         },
         {
           title: '4. Precision Batch Frying',
@@ -131,10 +132,10 @@ export function AboutSection({ lang }: AboutSectionProps) {
       ? 'स्वादम् फूड्स में आपका स्वागत है! धायरी, पुणे के शांत इलाके से हम उत्कृष्ट, प्रामाणिक भारतीय घरेलू नमकीन तैयार करते हैं। पारिवारिक समारोहों और त्योहारों के लिए स्वादिष्ट फराळ बनाने से शुरू हुआ यह सफर अब एक पसंदीदा ब्रांड बन गया है।'
       : 'Welcome to Swadam Foods! Based in the peaceful neighborhood of Dhayari, Pune, Maharashtra, we manufacture premium, authentic Indian savory snacks. What started as preparing delicious snacks for family gatherings and festive farals has now blossomed into a beloved local brand, bringing joy to homes across Pune.',
     desc2: lang === 'mr'
-      ? 'तुम्ही मागवलेले प्रत्येक उत्पादन—मग तो कुरकुरीत स्पेशल चिवडा असो, रिफाइंड राइस ब्रॅन ऑइल मधील शंकरपाळे असो किंवा तिखट-मीठ शंकरपाळे असो—हे सर्व मी, विद्या दांडेकर, पूर्णपणे स्वतः हाताने तयार करते.'
+      ? 'तुम्ही मागवलेले आमचे स्वादिष्ठ उत्पादन—अस्सल खमंग आणि कुरकुरीत प्रीमियम पातळ पोहा चिवडा—हे मी, विद्या दांडेकर, धायरी पुण्यातील माझ्या स्वतःच्या घरगुती किचनमध्ये पूर्णपणे प्रेमाने तयार करते.'
       : lang === 'hi'
-      ? 'आप जो भी उत्पाद ऑर्डर करते हैं—चाहे वह कुरकुरा स्पेशल चिवड़ा हो, रिफाइंड राइस ब्रान ऑयल की शंकरपाली हो या चटपटी शंकरपाली—यह सब मेरे द्वारा, यानी विद्या दांडेकर द्वारा पूर्णतः हस्तनिर्मित है।'
-      : 'Every single product you order—whether the crunchy Special Chivda, the layered Salted Shankarpali, or the tongue-tickling Tangy Shankarpali—is crafted completely by hand by me, Vidya Dandekar.',
+      ? 'आप जो भी उत्पाद ऑर्डर करते हैं—हमारा स्वादिष्ट और कुरकुरा प्रीमियम पातल पोहा चिवड़ा—यह सब मेरे द्वारा, यानी विद्या दांडेकर द्वारा धायरी, पुणे में पूर्णतः हस्तनिर्मित है।'
+      : 'Our flagship creation—the crunchy and delicious Premium Patal Poha Chivda—is crafted completely by hand by me, Vidya Dandekar, in my home kitchen in Dhayari, Pune.',
     quote: lang === 'mr'
       ? '"एक गृहिणी म्हणून मला समजते की अन्न म्हणजे केवळ पोट भरणे नाही; ते सुरक्षा, विश्वास आणि जिव्हाळा देण्याबद्दल आहे. मी फक्त रिफाइंड राइस ब्रॅन ऑइल, प्रीमियम फिल्टर तेल आणि स्वतः निवडलेले घरगुती मसाले वापरते. मी कोणतेही रासायनिक प्रिझर्व्हेटिव्ह, रंग किंवा खायचा सोडा वापरत नाही."'
       : lang === 'hi'
@@ -214,6 +215,11 @@ export function AboutSection({ lang }: AboutSectionProps) {
                   <p className="text-[10px] text-[var(--text-muted)] mt-0.5">{tStory.recipeDesc}</p>
                 </div>
               </div>
+            </div>
+
+            {/* FSSAI Registration Badge */}
+            <div className="pt-3">
+              <FssaiLogo variant="full" />
             </div>
           </div>
 

@@ -4,203 +4,205 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
   en: {
     // Header
     navHome: 'Home',
-    navOurSnacks: 'Our Snacks',
+    navOurSnacks: 'Our Chivda',
     navOurStory: 'Our Story',
-    navBulkInquiry: 'Bulk Gifting',
+    navBulkInquiry: 'Bulk Orders',
     themeDark: 'Dark Mode',
     themeLight: 'Light Mode',
 
     // Hero Section
-    heroBadge: '100% Homemade Savories Prepared Fresh',
+    heroBadge: '100% Homemade Fresh Patal Poha Chivda',
     heroTitlePart1: 'Purity in Every Bite,',
     heroTitlePart2: 'Swadam in Every Snack!',
-    heroDesc: 'Experience authentic, traditional Maharashtrian delicacies freshly prepared in Pune. Kneaded with refined rice bran oil and premium, double-filtered oils. Completely handmade by Vidya Dandekar with absolute hygiene and premium ingredients.',
-    btnExplore: 'Explore Collection',
+    heroDesc: 'Experience Pune’s favorite authentic Premium Patal Poha Chivda, prepared fresh in 100% refined rice bran oil with double-filtered refining. Completely handmade by Vidya Dandekar in Dhayari, Pune with cashew halves, roasted peanuts, and hand-selected spices.',
+    btnExplore: 'Order Patal Poha Chivda',
     btnOurStory: 'Our Story & Bulk Inquiry',
     ratingLabel: '5.0 Star Rated',
-    lovedByPune: 'Loved by local families in Pune',
+    lovedByPune: 'Loved by families across Pune',
 
     // Trust Pillars
     pillar1Title: '100% Homemade',
-    pillar1Desc: 'Made entirely by Vidya Dandekar in small precise home kitchen batches.',
-    pillar2Title: 'Fresh Preparation',
-    pillar2Desc: 'No stale stocks. Prepared freshly upon receiving your WhatsApp request.',
-    pillar3Title: 'Premium Ingredients',
-    pillar3Desc: 'Pure wheat flour, filtered oils, refined rice bran oil. Zero chemicals.',
-    pillar4Title: 'Seamless Ordering',
-    pillar4Desc: 'Add packs to bag, review subtotal, then finalize on WhatsApp instantly.',
+    pillar1Desc: 'Made entirely by Vidya Dandekar in small precise home kitchen batches in Dhayari, Pune.',
+    pillar2Title: 'Fresh Batch Prep',
+    pillar2Desc: 'No stale stock. Roasted fresh in small batches upon receiving your WhatsApp request.',
+    pillar3Title: 'Refined Rice Bran Oil',
+    pillar3Desc: 'Heart-healthy, light, non-greasy. Zero vanaspati, zero preservatives, zero soda.',
+    pillar4Title: 'Instant WhatsApp Order',
+    pillar4Desc: 'Select pack weight, review subtotal, and send direct booking on WhatsApp in 1 click.',
 
     // Reviews Section
-    reviewsHeading: 'Reviews',
+    reviewsHeading: 'Testimonials',
     reviewsTitle: 'Loved by Pune Families',
-    reviewsSubtitle: 'Read what actual clients say about our signature chivda and shankarpali packs.',
+    reviewsSubtitle: 'Read what actual clients say about Vidya Dandekar’s signature Premium Patal Poha Chivda.',
 
     // Collection Section
-    collHeading: 'Our Snacking Collection',
-    collTitle: 'Authentic Homemade Savories',
-    collSubtitle: 'Select your preferred pack sizes right on the product cards to update rates, or click any card to view cooking steps, certified specs, and product gallery!',
+    collHeading: 'Signature Specialty',
+    collTitle: 'Authentic Premium Patal Poha Chivda',
+    collSubtitle: 'Select your preferred pack option (1 Pack 200g, 2 Packs, 3 Packs, or 1kg Box with 5 Packs) directly to update pricing, or click to view recipe details, purity specs, and media gallery!',
 
     // Product Card UI
-    btnViewDetails: 'View Details & Media',
+    btnViewDetails: 'View Details & Gallery',
     btnAddToCart: 'Add To Order Bag',
-    btnInCart: 'Already in Bag',
+    btnInCart: 'Added in Bag',
     selectWeightLabel: 'Select Pack Weight',
     fromLabel: 'From',
+    gstIncluded: '(Incl. 5% GST)',
 
     // Basket Drawer
     basketTitle: 'Your Order Bag',
     basketEmpty: 'Your Order Bag is Empty',
-    basketExploreKitchen: 'Explore Kitchen Snacks',
-    basketSelectedItems: 'Selected Items',
+    basketExploreKitchen: 'Explore Patal Poha Chivda',
+    basketSelectedItems: 'Selected Packs',
     basketSubtotal: 'Subtotal Amount',
-    basketPreparing: 'Preparing Order...',
+    basketPreparing: 'Preparing Order Message...',
     basketPlaceWhatsApp: 'Place Order via WhatsApp',
-    basketProceed: 'Proceed to Place Order',
-    basketDetailsTitle: 'Delivery Details',
-    basketYourName: 'Your Name',
-    basketMethod: 'Delivery Method',
-    basketAddress: 'Complete Address & Pincode',
+    basketProceed: 'Proceed to Delivery Details',
+    basketDetailsTitle: 'Delivery / Pickup Details',
+    basketYourName: 'Your Full Name',
+    basketMethod: 'Fulfillment Method',
+    basketAddress: 'Complete Address & Landmark (Pune / Cities)',
     basketBack: 'Back to Order Bag',
     basketSummary: 'Order Summary',
 
     // Product Profile
-    profileBack: 'Back to Collection',
+    profileBack: 'Back to Products',
     profileSpecifications: 'Craft Specifications',
-    profileIngredients: 'Honest Ingredients',
+    profileIngredients: 'Honest Pure Ingredients',
     profileKitchenOrigin: 'Kitchen Origin',
-    profileShelfLife: 'Shelf Life',
-    profilePrepMethod: 'Preparation Method',
+    profileShelfLife: 'Fresh Shelf Life',
+    profilePrepMethod: 'Preparation Technique',
     profilePurityGuarantees: 'Purity Guarantees',
     profileAddToBag: 'Add Selected Pack to Bag',
 
     // Quick Navigation & Footer
     footerNav: 'Quick Navigation',
-    footerReachOut: 'Reach Out Directly',
+    footerReachOut: 'Contact Vidya Dandekar',
     footerLocation: 'Kitchen Location',
     footerPhone: 'WhatsApp / Phone',
     footerEmail: 'Email Address',
     footerInstagram: 'Instagram',
-    footerPrepInfo: '⏰ Preparation: prepared fresh on your booking'
+    footerPrepInfo: '⏰ Batch Info: Freshly prepared upon order booking'
   },
   hi: {
     // Header
     navHome: 'होम',
-    navOurSnacks: 'हमारे उत्पाद',
+    navOurSnacks: 'हमारा चिवड़ा',
     navOurStory: 'हमारी कहानी',
-    navBulkInquiry: 'थोक उपहार',
+    navBulkInquiry: 'थोक ऑर्डर',
     themeDark: 'डार्क मोड',
     themeLight: 'लाइट मोड',
 
     // Hero Section
-    heroBadge: '100% घर का बना ताजा नमकीन',
+    heroBadge: '100% घर का बना ताज़ा पातल पोहा चिवड़ा',
     heroTitlePart1: 'हर निवाले में शुद्धता,',
     heroTitlePart2: 'हर नाश्ते में स्वादम्!',
-    heroDesc: 'पुणे में ताज़ा तैयार प्रामाणिक, पारंपरिक महाराष्ट्रीयन व्यंजनों का अनुभव करें। रिफाइंड राइस ब्रान ऑयल और प्रीमियम, डबल-फिल्टर्ड तेलों से बना। पूरी तरह से विद्या दांडेकर द्वारा पूर्ण स्वच्छता और प्रीमियम सामग्री के साथ हस्तनिर्मित।',
-    btnExplore: 'संग्रह देखें',
+    heroDesc: 'पुणे का पसंदीदा प्रामाणिक प्रीमियम पातल पोहा चिवड़ा आज़माएं, जिसे 100% रिफाइंड राइस ब्रान ऑयल में ताज़ा भुना जाता है। धायरी, पुणे में विद्या दांडेकर द्वारा साबुत काजू, भुनी मूंगफली और हाथ से पिसे मसालों के साथ हस्तनिर्मित।',
+    btnExplore: 'पातल पोहा चिवड़ा ऑर्डर करें',
     btnOurStory: 'हमारी कहानी और थोक पूछताछ',
     ratingLabel: '5.0 स्टार रेटेड',
-    lovedByPune: 'पुणे के स्थानीय परिवारों द्वारा पसंदीदा',
+    lovedByPune: 'पुणे के परिवारों का पसंदीदा',
 
     // Trust Pillars
     pillar1Title: '100% घर का बना',
-    pillar1Desc: 'पूरी तरह से विद्या दांडेकर द्वारा घरेलू रसोई में छोटे बैचों में बनाया गया।',
-    pillar2Title: 'ताज़ा तैयारी',
-    pillar2Desc: 'कोई पुराना स्टॉक नहीं। आपका व्हाट्सएप अनुरोध मिलने पर ताज़ा तैयार किया जाता है।',
-    pillar3Title: 'प्रीमियम सामग्री',
-    pillar3Desc: 'शुद्ध गेहूं का आटा, फिल्टर्ड तेल, रिफाइंड राइस ब्रान ऑयल। शून्य रसायन।',
-    pillar4Title: 'आसान ऑर्डरिंग',
-    pillar4Desc: 'बैग में पैक जोड़ें, कुल राशि देखें, फिर तुरंत व्हाट्सएप पर ऑर्डर भेजें।',
+    pillar1Desc: 'धायरी, पुणे में विद्या दांडेकर द्वारा घरेलू रसोई में छोटे बैचों में बनाया गया।',
+    pillar2Title: 'ताज़ा बैच तैयारी',
+    pillar2Desc: 'कोई पुराना स्टॉक नहीं। व्हाट्सएप अनुरोध मिलने पर तुरंत ताजा भुना जाता है।',
+    pillar3Title: 'रिफाइंड राइस ब्रान ऑयल',
+    pillar3Desc: 'हृदय के लिए स्वास्थ्यप्रद, हल्का और गैर-चिकना। शून्य वनस्पति, शून्य रसायन।',
+    pillar4Title: 'व्हाट्सएप 1-क्लिक ऑर्डर',
+    pillar4Desc: 'पैक का वजन चुनें, कुल राशि देखें और 1-क्लिक में व्हाट्सएप पर ऑर्डर भेजें।',
 
     // Reviews Section
-    reviewsHeading: 'समीक्षाएं',
-    reviewsTitle: 'पुणे के परिवारों का पसंदीदा',
-    reviewsSubtitle: 'जानें कि हमारे असली ग्राहक हमारे विशेष चिवड़ा और शंकरपाली पैक के बारे में क्या कहते हैं।',
+    reviewsHeading: 'अभिप्राय',
+    reviewsTitle: 'पुणे के परिवारों की पसंद',
+    reviewsSubtitle: 'जानें कि ग्राहक विद्या दांडेकर के पातल पोहा चिवड़ा के बारे में क्या कहते हैं।',
 
     // Collection Section
-    collHeading: 'हमारा नाश्ता संग्रह',
-    collTitle: 'प्रामाणिक घरेलू नमकीन',
-    collSubtitle: 'कीमतों को अपडेट करने के लिए उत्पाद कार्ड पर अपने पसंदीदा पैक आकार का चयन करें, या रेसिपी विवरण, प्रमाणित विनिर्देश और उत्पाद गैलरी देखने के लिए क्लिक करें!',
+    collHeading: 'विशेषता',
+    collTitle: 'प्रामाणिक प्रीमियम पातल पोहा चिवड़ा',
+    collSubtitle: 'कीमत अपडेट करने के लिए अपना पसंदीदा विकल्प (1 पैक 200 ग्राम, 2 पैक, 3 पैक, या 5 पैक का 1 किग्रा बॉक्स) चुनें!',
 
     // Product Card UI
     btnViewDetails: 'विवरण और गैलरी देखें',
     btnAddToCart: 'ऑर्डर बैग में जोड़ें',
     btnInCart: 'बैग में मौजूद है',
     selectWeightLabel: 'पैक वजन चुनें',
-    fromLabel: 'न्यूनतम',
+    fromLabel: 'शुरुआती कीमत',
+    gstIncluded: '(5% जीएसटी शामिल)',
 
     // Basket Drawer
     basketTitle: 'आपका ऑर्डर बैग',
     basketEmpty: 'आपका ऑर्डर बैग खाली है',
-    basketExploreKitchen: 'नाश्ता संग्रह देखें',
-    basketSelectedItems: 'चयनित आइटम',
+    basketExploreKitchen: 'पातल पोहा चिवड़ा देखें',
+    basketSelectedItems: 'चयनित पैक',
     basketSubtotal: 'कुल राशि',
     basketPreparing: 'ऑर्डर तैयार हो रहा है...',
-    basketPlaceWhatsApp: 'व्हाट्सएप के माध्यम से ऑर्डर करें',
-    basketProceed: 'ऑर्डर विवरण पर आगे बढ़ें',
-    basketDetailsTitle: 'वितरण विवरण',
-    basketYourName: 'आपका नाम',
-    basketMethod: 'वितरण का तरीका',
-    basketAddress: 'पूरा पता और पिनकोड',
+    basketPlaceWhatsApp: 'व्हाट्सएप द्वारा ऑर्डर भेजें',
+    basketProceed: 'वितरण विवरण पर आगे बढ़ें',
+    basketDetailsTitle: 'वितरण / पिकअप विवरण',
+    basketYourName: 'आपका पूरा नाम',
+    basketMethod: 'ऑर्डर प्राप्ति का तरीका',
+    basketAddress: 'पूरा पता और लैंडमार्क (पुणे / अन्य शहर)',
     basketBack: 'ऑर्डर बैग पर वापस जाएं',
     basketSummary: 'ऑर्डर सारांश',
 
     // Product Profile
-    profileBack: 'संग्रह पर वापस जाएं',
+    profileBack: 'उत्पाद सूची पर वापस जाएं',
     profileSpecifications: 'उत्पाद विनिर्देश',
     profileIngredients: 'शुद्ध सामग्रियां',
     profileKitchenOrigin: 'रसोई का मूल',
-    profileShelfLife: 'शेल्फ लाइफ',
+    profileShelfLife: 'ताजा शेल्फ लाइफ',
     profilePrepMethod: 'तैयारी की विधि',
     profilePurityGuarantees: 'शुद्धता गारंटी',
     profileAddToBag: 'चयनित पैक बैग में जोड़ें',
 
     // Quick Navigation & Footer
     footerNav: 'त्वरित नेविगेशन',
-    footerReachOut: 'सीधे संपर्क करें',
+    footerReachOut: 'विद्या दांडेकर से संपर्क करें',
     footerLocation: 'रसोई का पता',
     footerPhone: 'व्हाट्सएप / फोन',
     footerEmail: 'ईमेल पता',
     footerInstagram: 'इंस्टाग्राम',
-    footerPrepInfo: '⏰ तैयारी: आपके बुक करने पर ताजा तैयार'
+    footerPrepInfo: '⏰ बैच जानकारी: ऑर्डर बुक करने पर ताजा तैयार'
   },
   mr: {
     // Header
     navHome: 'मुख्यपृष्ठ',
-    navOurSnacks: 'आमचे खाद्यपदार्थ',
+    navOurSnacks: 'आमचा चिवडा',
     navOurStory: 'आमची गोष्ट',
-    navBulkInquiry: 'घाऊक भेटवस्तू',
+    navBulkInquiry: 'घाऊक ऑर्डर्स',
     themeDark: 'डार्क मोड',
     themeLight: 'लाइट मोड',
 
     // Hero Section
-    heroBadge: '१००% घरगुती आणि ताज्या चवीचे पदार्थ',
+    heroBadge: '१००% घरगुती व खमंग पातळ पोहा चिवडा',
     heroTitlePart1: 'प्रत्येक घासात शुद्धता,',
     heroTitlePart2: 'प्रत्येक पदार्थात स्वादम्!',
-    heroDesc: 'पुण्यामध्ये ताजे तयार केलेले अस्सल, पारंपारिक महाराष्ट्रीयन खाद्यपदार्थांचा आस्वाद घ्या. रिफाइंड राइस ब्रॅन ऑइल आणि प्रीमियम, डबल-फिल्टर तेलाने मळलेले. पूर्ण स्वच्छता आणि उत्कृष्ट साहित्य वापरून विद्या दांडेकर यांनी स्वतः घरगुती पद्धतीने तयार केलेले.',
-    btnExplore: 'खाद्यपदार्थ पहा',
+    heroDesc: 'पुण्यातील घरांची आवडता अस्सल प्रीमियम पातळ पोहा चिवडा चाखा! १००% रिफाइंड राइस ब्रॅन ऑइल मध्ये खमंग भाजलेला. धायरी, पुणे येथे विद्या दांडेकर यांच्या हस्ते काजू, शेंगदाणे, खोबऱ्याचे काप आणि घरगुती मसाल्यांसह बनवलेला.',
+    btnExplore: 'पातळ पोहा चिवडा ऑर्डर करा',
     btnOurStory: 'आमची गोष्ट व घाऊक चौकशी',
     ratingLabel: '५.० स्टार मानांकन',
-    lovedByPune: 'पुण्यातील कुटुंबांचा विश्वास',
+    lovedByPune: 'संपूर्ण पुण्यातील कुटुंबांचा विश्वास',
 
     // Trust Pillars
     pillar1Title: '१००% घरगुती',
-    pillar1Desc: 'विद्या दांडेकर यांच्या घरगुती किचनमध्ये लहान बॅचेसमध्ये अत्यंत प्रेमाने तयार केलेले.',
+    pillar1Desc: 'धायरी, पुणे येथे विद्या दांडेकर यांच्या घरगुती किचनमध्ये लहान बॅचेसमध्ये प्रेमाने बनवलेला.',
     pillar2Title: 'ताजी तयारी',
-    pillar2Desc: 'शिल्लक माल नाही. तुमची व्हॉट्सॲप ऑर्डर मिळाल्यावरच ताजे आणि खमंग बनवले जाते.',
-    pillar3Title: 'उत्कृष्ट साहित्य',
-    pillar3Desc: 'शुद्ध गव्हाचे पीठ, फिल्टर तेल, रिफाइंड राइस ब्रॅन ऑइल. शून्य रसायने.',
-    pillar4Title: 'सुलभ ऑर्डर पद्धत',
-    pillar4Desc: 'पिशवीत पॅक जोडा, एकूण किंमत तपासा आणि थेट व्हॉट्सॲपवर ऑर्डर द्या.',
+    pillar2Desc: 'शिल्लक माल नाही. तुमची व्हॉट्सॲप ऑर्डर मिळाल्यावरच ताजे आणि खमंग भाजला जातो.',
+    pillar3Title: 'रिफाइंड राइस ब्रॅन ऑइल',
+    pillar3Desc: 'हृदयासाठी उत्तम, हलका, बिन-तेलकट. शून्य वनस्पती, शून्य रसायने, शून्य सोडा.',
+    pillar4Title: '१-क्लिक व्हॉट्सॲप ऑर्डर',
+    pillar4Desc: 'वजन निवडा, एकूण किंमत तपासा आणि थेट १-क्लिक मध्ये व्हॉट्सॲपवर ऑर्डर पाठवा.',
 
     // Reviews Section
     reviewsHeading: 'अभिप्राय',
     reviewsTitle: 'पुण्यातील कुटुंबांची पसंती',
-    reviewsSubtitle: 'आमचे चवदार शंकरपाळे आणि भाजक्या पोह्यांच्या चिवड्याविषयी ग्राहक काय म्हणतात ते वाचा.',
+    reviewsSubtitle: 'विद्या दांडेकर यांच्या खमंग पातळ पोहा चिवड्याबद्दल ग्राहकांचे अभिप्राय वाचा.',
 
     // Collection Section
-    collHeading: 'आमचा खाद्यपदार्थ संग्रह',
-    collTitle: 'अस्सल घरगुती चवदार पदार्थ',
-    collSubtitle: 'किंमत पाहण्यासाठी थेट कार्डवर वजन निवडा, किंवा साहित्य, कृती, फोटो व व्हिडिओ पाहण्यासाठी कार्डवर क्लिक करा!',
+    collHeading: 'खास वैशिष्ट्य',
+    collTitle: 'अस्सल प्रीमियम पातळ पोहा चिवडा',
+    collSubtitle: 'किंमत पाहण्यासाठी आणि ऑर्डर्ससाठी तुमचा आवडता पॅक (१ पॅक २०० ग्रॅम, २ पॅक्स, ३ पॅक्स, किंवा ५ पॅक्सचा १ किलोग्रॅम बॉक्स) निवडा!',
 
     // Product Card UI
     btnViewDetails: 'माहिती व गॅलरी पहा',
@@ -208,95 +210,66 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     btnInCart: 'बॅगमध्ये जोडले आहे',
     selectWeightLabel: 'पॅकचे वजन निवडा',
     fromLabel: 'किंमत',
+    gstIncluded: '(५% जीएसटी समाविष्ट)',
 
     // Basket Drawer
     basketTitle: 'तुमची ऑर्डर बॅग',
     basketEmpty: 'तुमची ऑर्डर बॅग रिकामी आहे',
-    basketExploreKitchen: 'खाद्यपदार्थ पहा',
-    basketSelectedItems: 'निवडलेले पदार्थ',
+    basketExploreKitchen: 'पातळ पोहा चिवडा पहा',
+    basketSelectedItems: 'निवडलेले पॅक्स',
     basketSubtotal: 'एकूण रक्कम',
-    basketPreparing: 'ऑर्डर तयार होत आहे...',
+    basketPreparing: 'ऑर्डर मेसेज तयार होत आहे...',
     basketPlaceWhatsApp: 'व्हॉट्सॲपद्वारे ऑर्डर पाठवा',
-    basketProceed: 'ऑर्डर तपशीलावर जा',
-    basketDetailsTitle: 'वितरण तपशील',
-    basketYourName: 'तुमचे नाव',
-    basketMethod: 'वितरण पद्धत',
-    basketAddress: 'पूर्ण पत्ता आणि पिनकोड',
+    basketProceed: 'वितरण तपशीलावर जा',
+    basketDetailsTitle: 'वितरण / पिकअप तपशील',
+    basketYourName: 'तुमचे पूर्ण नाव',
+    basketMethod: 'ऑर्डर मिळण्याची पद्धत',
+    basketAddress: 'पूर्ण पत्ता आणि लँडमार्क (पुणे व इतर शहरे)',
     basketBack: 'ऑर्डर बॅगवर परत जा',
     basketSummary: 'ऑर्डरचा गोषवारा',
 
     // Product Profile
-    profileBack: 'खाद्यपदार्थांवर परत जा',
+    profileBack: 'उत्पादनांवर परत जा',
     profileSpecifications: 'बनवण्याची वैशिष्ट्ये',
     profileIngredients: 'शुद्ध घरगुती साहित्य',
     profileKitchenOrigin: 'किचनचे ठिकाण',
-    profileShelfLife: 'टिकण्याची मुदत',
-    profilePrepMethod: 'बनवण्याची पद्धत',
+    profileShelfLife: 'ताजी टिकण्याची मुदत',
+    profilePrepMethod: 'भाजण्याची पद्धत',
     profilePurityGuarantees: 'शुद्धतेची हमी',
     profileAddToBag: 'निवडलेला पॅक बॅगमध्ये जोडा',
 
     // Quick Navigation & Footer
     footerNav: 'द्रुत नेव्हिगेशन',
-    footerReachOut: 'थेट संपर्क साधा',
+    footerReachOut: 'विद्या दांडेकर यांच्याशी संपर्क साधा',
     footerLocation: 'किचनचे ठिकाण',
     footerPhone: 'व्हॉट्सॲप / फोन',
     footerEmail: 'ईमेल पत्ता',
     footerInstagram: 'इंस्टाग्राम',
-    footerPrepInfo: '⏰ तयारी: तुमच्या ऑर्डरनुसार ताजे बनवले जाते'
+    footerPrepInfo: '⏰ बॅच माहिती: तुमची ऑर्डर मिळाल्यावरच ताजे भाजले जाते'
   }
 };
 
 // Localized product details mapping
 export const PRODUCT_TRANSLATIONS: Record<Language, Record<string, { name: string; subtitle: string; description: string }>> = {
   en: {
-    'prod-1': {
-      name: 'Salted Shankarpali (Rice Bran Oil)',
-      subtitle: 'Crispy, hand-rolled savory diamonds kneaded in refined rice bran oil.',
-      description: 'A traditional teatime companion, made with pure wheat flour and refined rice bran oil. Lightly salted, layered texture, and melts in your mouth.'
-    },
-    'prod-2': {
-      name: 'Spicy Tangy Shankarpali',
-      subtitle: 'A sweet, sour, and spicy twist on the classic shankarpali.',
-      description: 'Coated with handground dry mango powder (amchur), red chili, and a hint of organic sugar. Bold, addictive Indian spice kick.'
-    },
-    'prod-3': {
-      name: 'Premium Roasted Poha Chivda',
-      subtitle: 'Crispy thin roasted rice flakes tossed with premium cashews and peanuts.',
-      description: 'Completely oil-roasted light dietary snack. Tossed with premium dry fruits, green chilies, curry leaves, and local Pune spices.'
+    'prod-patal-poha-chivda': {
+      name: 'Premium Patal Poha Chivda',
+      subtitle: 'Crispy paper-thin flaked rice tossed with premium cashews, roasted peanuts & curry leaves.',
+      description: '100% oil-roasted delicate dietary chivda made with refined rice bran oil. Light, digestible, crunchy, and seasoned with authentic Pune home spices.'
     }
   },
   hi: {
-    'prod-1': {
-      name: 'नमकीन शंकरपाली (रिफाइंड राइस ब्रान ऑयल)',
-      subtitle: 'रिफाइंड राइस ब्रान ऑयल में गुंथे हुए कुरकुरे, हाथ से बेले हुए नमकीन हीरे।',
-      description: 'एक पारंपरिक चाय-समय का साथी, जो शुद्ध गेहूं के आटे और रिफाइंड राइस ब्रान ऑयल से बना है। हल्का नमकीन, परतदार बनावट और मुंह में पिघल जाने वाला।'
-    },
-    'prod-2': {
-      name: 'तीखी चटपटी शंकरपाली',
-      subtitle: 'क्लासिक शंकरपाली पर एक मीठा, खट्टा और तीखा ट्विस्ट।',
-      description: 'हाथ से पिसे हुए अमचूर, लाल मिर्च और जैविक चीनी के संकेत के साथ लेपित। साहसी, लत लगाने वाला भारतीय मसाला किक।'
-    },
-    'prod-3': {
-      name: 'प्रीमियम भुना हुआ पोहा चिवड़ा',
-      subtitle: 'कुरकुरे पतले भुने हुए चावल के गुच्छे प्रीमियम काजू और मूंगफली के साथ मिलाए गए।',
-      description: 'पूरी तरह से तेल रहित भुना हुआ हल्का आहार नाश्ता। प्रीमियम सूखे मेवों, हरी मिर्च, कढ़ी पत्ते और स्थानीय पुणे मसालों के साथ मिलाया गया।'
+    'prod-patal-poha-chivda': {
+      name: 'प्रीमियम पातल पोहा चिवड़ा',
+      subtitle: 'काजू, भुनी मूंगफली और कढ़ी पत्ता के साथ भुना हुआ कुरकुरा पतला पोहा।',
+      description: '100% रिफाइंड राइस ब्रान ऑयल में भुना हुआ हल्का सुपाच्य चिवड़ा। ताजे काजू, मूंगफली, नारियल और घर के मसालों से भरपूर।'
     }
   },
   mr: {
-    'prod-1': {
-      name: 'खमंग शंकरपाळे (रिफाइंड राइस ब्रॅन ऑइल)',
-      subtitle: 'रिफाइंड राइस ब्रॅन ऑइल मध्ये मळलेले, खुसखुशीत आणि कुरकुरीत शंकरपाळे.',
-      description: 'चहाच्या वेळेचा पारंपारिक सोबती, जो शुद्ध गव्हाचे पीठ आणि रिफाइंड राइस ब्रॅन ऑइल वापरून बनवला आहे. हलके नमकीन, खुसखुशीत आणि जिभेवर विरघळणारे.'
-    },
-    'prod-2': {
-      name: 'तिखट-मीठ शंकरपाळे (चटपटीत)',
-      subtitle: 'पारंपारिक शंकरपाळ्याला दिलेला तिखट, आंबट आणि गोड झटका.',
-      description: 'घरगुती आमचूर पावडर, तिखट लाल मिरची आणि सेंद्रिय साखरेचे मिश्रण कोटिंग केलेले. जिभेला चटकदार चव देणारे.'
-    },
-    'prod-3': {
-      name: 'भाजक्या पोह्यांचा चिवडा (प्रीमियम)',
-      subtitle: 'पातळ भाजके पोहे, काजू, शेंगदाणे आणि खोबऱ्याचे काप टाकून बनवलेला कुरकुरीत चिवडा.',
-      description: 'अतिशय कमी तेलात भाजलेला हलकाफुलका चिवडा. काजू, मनुके, हिरवी मिरची, कढीपत्ता आणि पुण्याचे खास मसाले घातलेले.'
+    'prod-patal-poha-chivda': {
+      name: 'प्रीमियम पातळ पोहा चिवडा',
+      subtitle: 'काजू, शेंगदाणे, खोबऱ्याचे काप आणि कढीपत्ता घालून भाजलेला कुरकुरीत चिवडा.',
+      description: 'अतिशय कमी व स्वच्छ रिफाइंड राइस ब्रॅन ऑइल मध्ये भाजलेला खमंग पातळ पोहा चिवडा. पचनास हलका, कुरकुरीत आणि घरगुती पुणेरी मसाल्यांची अस्सल चव.'
     }
   }
 };

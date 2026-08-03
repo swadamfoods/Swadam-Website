@@ -31,28 +31,10 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, cartItems, on
 
   // Get custom tags & styles matching index.html
   const getSpiceTag = () => {
-    switch (product.id) {
-      case 'prod-1':
-        return { 
-          text: lang === 'mr' ? 'रिफाइंड राइस ब्रॅन ऑइल' : lang === 'hi' ? 'रिफाइंड राइस ब्रान ऑयल' : 'Haldi Blend', 
-          style: { background: 'rgba(212, 175, 55, 0.3)' } 
-        };
-      case 'prod-2':
-        return { 
-          text: lang === 'mr' ? 'चटपटीत' : lang === 'hi' ? 'चटपटा मसाला' : 'Zesty Saffron', 
-          style: { background: 'rgba(226, 114, 91, 0.3)' } 
-        };
-      case 'prod-3':
-        return { 
-          text: lang === 'mr' ? 'प्रीमियम भाजका' : lang === 'hi' ? 'प्रीमियम भुना' : 'Cardamom & Curry', 
-          style: { background: 'rgba(143, 168, 130, 0.3)' } 
-        };
-      default:
-        return { 
-          text: 'Pure', 
-          style: { background: 'rgba(255, 255, 255, 0.15)' } 
-        };
-    }
+    return { 
+      text: lang === 'mr' ? '१००% घरगुती' : lang === 'hi' ? '100% घर का बना' : '100% Homemade', 
+      style: { background: 'rgba(212, 175, 55, 0.4)', color: '#fff' } 
+    };
   };
 
   const spiceTag = getSpiceTag();
@@ -144,9 +126,14 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, cartItems, on
 
         {/* Card Footer with Price and Add Button */}
         <div className="flex justify-between items-center mt-auto pt-4 border-t border-[var(--border)]">
-          <span className="price-tag text-xl font-bold font-sans text-[var(--gold)]">
-            ₹{activePrice}
-          </span>
+          <div className="flex flex-col">
+            <span className="price-tag text-xl font-bold font-sans text-[var(--gold)]">
+              ₹{activePrice}
+            </span>
+            <span className="text-[10px] text-[var(--text-muted)] font-medium">
+              {t.gstIncluded}
+            </span>
+          </div>
           <button
             onClick={handleAddClick}
             className={`w-10 h-10 rounded-full flex items-center justify-center transition-all cursor-pointer ${

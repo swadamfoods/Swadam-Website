@@ -20,8 +20,9 @@ import { ProductProfile } from './components/ProductProfile';
 import { BasketDrawer } from './components/BasketDrawer';
 import { AboutSection } from './components/AboutSection';
 import { ImageWithFallback } from './components/ImageWithFallback';
+import { FssaiLogo } from './components/FssaiLogo';
 
-import { SNACK_PRODUCTS, TESTIMONIALS, WHATSAPP_NUMBER, BUSINESS_EMAIL, INSTAGRAM_ID, INSTAGRAM_URL, FACEBOOK_URL, TWITTER_URL, YOUTUBE_URL, LINKEDIN_URL } from './data';
+import { SNACK_PRODUCTS, TESTIMONIALS, WHATSAPP_NUMBER, WHATSAPP_URL_NUMBER, BUSINESS_EMAIL, INSTAGRAM_ID, INSTAGRAM_URL, FACEBOOK_URL, TWITTER_URL, YOUTUBE_URL, LINKEDIN_URL, FSSAI_NUMBER } from './data';
 import { SnackProduct, SnackWeight, CartItem } from './types';
 import { Language, TRANSLATIONS } from './translations';
 
@@ -76,6 +77,26 @@ export default function App() {
   useEffect(() => {
     localStorage.setItem('swadam_lang', lang);
   }, [lang]);
+
+  // Disable right click & inspect element shortcuts
+  useEffect(() => {
+    const handleContextMenu = (e: MouseEvent) => e.preventDefault();
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (
+        e.key === 'F12' ||
+        (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i' || e.key === 'J' || e.key === 'j')) ||
+        (e.ctrlKey && (e.key === 'U' || e.key === 'u' || e.key === 'S' || e.key === 's'))
+      ) {
+        e.preventDefault();
+      }
+    };
+    document.addEventListener('contextmenu', handleContextMenu);
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.removeEventListener('contextmenu', handleContextMenu);
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
 
   // Scroll to Top visibility
   useEffect(() => {
@@ -220,11 +241,12 @@ export default function App() {
                       </div>
 
                       {/* Trusted ribbon */}
-                      <div className="pt-4 flex flex-wrap justify-center lg:justify-start items-center gap-6 text-[var(--text-muted)] text-xs">
+                      <div className="pt-4 flex flex-wrap justify-center lg:justify-start items-center gap-4 sm:gap-6 text-[var(--text-muted)] text-xs">
                         <div className="flex items-center gap-1.5">
                           <Heart className="w-4 h-4 text-[var(--accent)] fill-[var(--accent)] animate-pulse" />
                           <span>{t.lovedByPune}</span>
                         </div>
+                        <FssaiLogo variant="compact" />
                       </div>
                     </div>
 
@@ -397,6 +419,10 @@ export default function App() {
                   ? 'पुणे में रिफाइंड राइस ब्रान ऑयल और प्रीमियम सामग्री का उपयोग करके पूर्ण स्वच्छता के साथ तैयार किए गए असली घर के बने महाराष्ट्रीयन चाय के समय के नाश्ते।' 
                   : 'Authentic, home-cooked Maharashtrian tea-time snacks prepared under strict hygiene guidelines using refined rice bran oil and premium ingredients in Pune.'}
               </p>
+              {/* FSSAI Official Certification Badge in Footer */}
+              <div className="pt-2">
+                <FssaiLogo variant="footer" />
+              </div>
             </div>
 
             {/* Quick Links Nav */}
@@ -426,7 +452,7 @@ export default function App() {
               </address>
               <p className="text-[var(--text-muted)]">
                 <strong>{t.footerPhone}:</strong> <br />
-                <a href={`https://wa.me/919356614958`} target="_blank" rel="noopener noreferrer" className="text-[var(--gold)] font-mono hover:underline font-bold">
+                <a href={`https://wa.me/${WHATSAPP_URL_NUMBER}`} target="_blank" rel="noopener noreferrer" className="text-[var(--gold)] font-mono hover:underline font-bold">
                   {WHATSAPP_NUMBER}
                 </a>
               </p>

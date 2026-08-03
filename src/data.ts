@@ -11,107 +11,46 @@ export const YOUTUBE_URL = 'https://www.youtube.com/@swadamfoodsindia';
 export const LINKEDIN_URL = 'https://www.linkedin.com/company/swadamfoods';
 export const BUSINESS_OWNER = 'Vidya Dandekar';
 export const BUSINESS_LOCATION = 'Dhayari, Pune, Maharashtra';
+export const FSSAI_NUMBER = '21526080002094';
 
 export const SNACK_PRODUCTS: SnackProduct[] = [
   {
-    id: 'prod-1',
-    name: 'Salted Shankarpali',
-    description: 'Delicate, multilayered, and exquisitely flaky dough crispies prepared with refined rice bran oil and sea salt.',
-    longDescription: 'Our Salted Shankarpali is made using a generations-old rolling and folding technique. By hand-kneading premium flour with refined rice bran oil, we achieve distinct crisp layers that shatter beautifully with every single bite.',
+    id: 'prod-patal-poha-chivda',
+    name: 'Premium Patal Poha Chivda',
+    description: 'Crispy paper-thin flaked rice (Patal Poha) roasted with premium whole cashews, roasted peanuts, green chillies, dry coconut, and aromatic curry leaves in 100% refined rice bran oil.',
+    longDescription: 'Handcrafted by Vidya Dandekar in Dhayari, Pune using traditional double-filtered refining techniques. Our Premium Patal Poha Chivda features thin flaked rice roasted to delicate golden perfection, tossed with crunch-roasted peanuts, rich cashew halves, thin dried coconut slices, fresh curry leaves, and a secret home-ground Puneri spice blend. Light, digestible, non-greasy, and completely free of artificial preservatives, vanaspati, or colorings.',
     pricing: [
-      { weight: 'Pocket pack(100gm)', price: 65 },
-      { weight: 'Regular pack(200gm)', price: 120 },
-      { weight: 'Large Pack(400gm)', price: 230 }
+      { weight: '1 Pack (200g)', price: 90 },
+      { weight: '2 Packs (400g)', price: 175 },
+      { weight: '3 Packs (600g)', price: 260 },
+      { weight: '1kg Box (5 x 200g Packs)', price: 425 }
     ],
-    defaultWeight: 'Pocket pack(100gm)',
-    imageFileName: 'salted.jpg',
-    imageFileNames: ['salted.jpg', 'salted-2.jpg', 'salted-3.jpg'],
-    fallbackUnsplashUrl: 'https://images.unsplash.com/photo-1541532713592-79a0317b6b77?auto=format&fit=crop&w=800&q=80',
-    fallbackUnsplashUrls: [
-      'https://images.unsplash.com/photo-1541532713592-79a0317b6b77?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=800&q=80'
-    ],
-    videoFileName: 'salted-video.mp4',
-    fallbackVideoUrl: 'https://assets.mixkit.co/videos/preview/mixkit-frying-crispy-snacks-in-a-wok-34444-large.mp4',
-    ingredients: [
-      'Premium Flour',
-      'Refined Rice Bran Oil',
-      'Organic Rock Salt',
-      'Cold-pressed Oil'
-    ],
-    keyHighlights: [
-      'Refined Rice Bran Oil',
-      'No Maida-Bleach'
-    ]
-  },
-  {
-    id: 'prod-2',
-    name: 'Tangy Shankarpali',
-    description: 'Our traditional crispies dusted with a signature hot-and-sour spice blend for an authentic flavor burst.',
-    longDescription: 'Dusted immediately after escaping the oil with our proprietary in-house masala blend, this delivers a wave of sweet and sour flavor followed by a mild spicy kick. Zero artificial color enhancers.',
-    pricing: [
-      { weight: 'Pocket pack(100gm)', price: 70 },
-      { weight: 'Regular pack(200gm)', price: 130 },
-      { weight: 'Large Pack(400gm)', price: 250 }
-    ],
-    defaultWeight: 'Pocket pack(100gm)',
-    imageFileName: 'tangy.jpg',
-    imageFileNames: ['tangy.jpg', 'tangy-2.jpg', 'tangy-3.jpg'],
-    fallbackUnsplashUrl: 'https://images.unsplash.com/photo-1601050690597-df056fb4ce78?auto=format&fit=crop&w=800&q=80',
-    fallbackUnsplashUrls: [
-      'https://images.unsplash.com/photo-1601050690597-df056fb4ce78?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80'
-    ],
-    videoFileName: 'tangy-video.mp4',
-    fallbackVideoUrl: 'https://assets.mixkit.co/videos/preview/mixkit-pouring-spices-on-food-40241-large.mp4',
-    ingredients: [
-      'Premium Flour',
-      'Refined Rice Bran Oil',
-      'Amchur',
-      'Black Salt',
-      'Cayenne',
-      'Cold-Pressed Oil'
-    ],
-    keyHighlights: [
-      'Handground Spices',
-      'Zero Preservatives'
-    ]
-  },
-  {
-    id: 'prod-3',
-    name: 'Special Chivda',
-    description: 'Light crispy flaked rice mixed with whole cashew nuts, roasted peanuts, green chillies, and curry leaves.',
-    longDescription: 'Prepared using double-filtered oil, our Special Chivda balances roasted poha with standard curry leaf seasoning. Roasted peanuts and premium cashew halves lend a sweet nuttiness to every spoonful.',
-    pricing: [
-      { weight: 'Pocket pack(100gm)', price: 80 },
-      { weight: 'Regular pack(200gm)', price: 150 },
-      { weight: 'Large Pack(400gm)', price: 280 }
-    ],
-    defaultWeight: 'Pocket pack(100gm)',
-    imageFileName: 'chivda.jpg',
-    imageFileNames: ['chivda.jpg', 'chivda-2.jpg', 'chivda-3.jpg'],
+    defaultWeight: '1 Pack (200g)',
+    imageFileName: 'patal-poha-chivda.jpg',
+    imageFileNames: ['patal-poha-chivda.jpg', 'patal-poha-chivda-1.jpg', 'patal-poha-chivda-2.jpg', 'patal-poha-chivda-3.jpg'],
     fallbackUnsplashUrl: 'https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=800&q=80',
     fallbackUnsplashUrls: [
       'https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=800&q=80',
       'https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&w=800&q=80',
       'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80'
     ],
-    videoFileName: 'chivda-video.mp4',
+    videoFileName: 'patal-poha-chivda-video.mp4',
     fallbackVideoUrl: 'https://assets.mixkit.co/videos/preview/mixkit-cooking-with-oil-in-a-frying-pan-40242-large.mp4',
     ingredients: [
-      'Flat-roasted Rice',
-      'Peanuts',
-      'Cashews',
-      'Green Chillies',
-      'Curry Leaves',
-      'Mustard Seeds',
-      'Rock Salt'
+      'Paper-Thin Flaked Rice (Patal Poha)',
+      '100% Refined Rice Bran Oil',
+      'Whole Roasted Cashew Halves',
+      'Select Roasted Peanuts',
+      'Thin Dry Coconut Slices',
+      'Fresh Green Chillies & Curry Leaves',
+      'Handground Turmeric & Rock Salt',
+      'Authentic Puneri Spice Blend'
     ],
     keyHighlights: [
-      'High-Protein Nuts',
-      'Cold-Pressed Oils'
+      '100% Refined Rice Bran Oil',
+      'Zero Vanaspati & Zero Preservatives',
+      'Handcrafted Fresh in Dhayari, Pune',
+      'Rich in Protein Nuts & Antioxidants'
     ]
   }
 ];
@@ -122,7 +61,7 @@ export const TESTIMONIALS: Testimonial[] = [
     name: 'Anjali Deshpande',
     location: 'Kothrud, Pune',
     rating: 5,
-    comment: 'The Poha Chivda from Swadam Foods tastes exactly like how my grandmother used to make it. It is very light, uses very little oil, and has the perfect balance of green chilies and peanuts. Highly recommended!',
+    comment: 'The Premium Patal Poha Chivda from Swadam Foods tastes exactly like how my grandmother used to make it in Pune! It is ultra-light, non-greasy, and packed with cashews and peanuts. Highly recommended!',
     date: 'June 2026'
   },
   {
@@ -130,7 +69,7 @@ export const TESTIMONIALS: Testimonial[] = [
     name: 'Rohan Dandavate',
     location: 'Baner, Pune',
     rating: 5,
-    comment: 'The Tangy Shankarpali is an absolute masterpiece! My children love the spicy and sour coating. It has become our daily evening companion with daily tea. Order process via WhatsApp was incredibly fast and seamless.',
+    comment: 'Vidya Dandekar’s Patal Poha Chivda is an absolute masterpiece! My entire family loves having it with our evening tea. Ordering via WhatsApp was fast and effortless.',
     date: 'July 2026'
   },
   {
@@ -138,7 +77,7 @@ export const TESTIMONIALS: Testimonial[] = [
     name: 'Meera Kulkarni',
     location: 'Dhayari, Pune',
     rating: 5,
-    comment: 'Since Vidya tai lives right here in Dhayari, I ordered Salty Shankarpali for a family function. They were so fresh and flaky. You can smell the purity of Refined Rice Bran Oil the moment you open the packet. Outstanding work!',
+    comment: 'Since Vidya tai lives right here in Dhayari, I ordered bulk Patal Poha Chivda packets for a family gathering. Everyone praised the freshness and delicate crunch. Exceptional home cooking!',
     date: 'May 2026'
   }
 ];
@@ -146,22 +85,26 @@ export const TESTIMONIALS: Testimonial[] = [
 export const FAQS = [
   {
     q: 'How do I place an order?',
-    a: 'We use WhatsApp for easy, direct ordering. Simply browse our snacks on this website, select the desired weights, add them to your order basket, and click "Order via WhatsApp". This will compile a pre-formatted message listing your items, prices, and totals, which you can send to Vidya Dandekar at +91 88888 51522. We will then coordinate payment (UPI/GPay/PhonePe) and delivery details with you.'
+    a: 'We use WhatsApp for easy, direct ordering! Select your desired pack quantity (1 Pack of 200g, 2 Packs, 3 Packs, or a 1kg Box with 5 Packs) on this website, add to your bag, and click "Order via WhatsApp". It creates a pre-formatted message listing your order, address, and total, which sends directly to Vidya Dandekar at +91 88888 51522.'
   },
   {
-    q: 'How fresh are the snacks?',
-    a: 'Every single packet of chivda and shankarpali is made fresh in small, hygienic batches by Vidya Dandekar herself at her home in Dhayari, Pune. We do not stock snacks for weeks. When you place an order, it is prepared fresh to ensure the longest shelf life and absolute crunch!'
+    q: 'How fresh is the Patal Poha Chivda?',
+    a: 'Every batch of Premium Patal Poha Chivda is prepared fresh in small batches by Vidya Dandekar herself at her home kitchen in Dhayari, Pune upon receiving your order. We never sell old or stored stock!'
   },
   {
-    q: 'What are the delivery and shipping charges?',
-    a: 'For residents in Dhayari and nearby areas in Pune, self-pickup is available for free, or we can arrange local Dunzo/Porter delivery at actual costs. For orders across Pune or other cities in India, we ship via trustworthy courier partners (Standard shipping rates apply based on weight).'
+    q: 'What oil is used in cooking?',
+    a: 'We strictly use 100% high-grade refined rice bran oil. It is light, heart-healthy, non-greasy, and rich in natural antioxidants (oryzanol). We never use vanaspati or artificial butter.'
   },
   {
-    q: 'Can I order custom weights or request bulk quantities?',
-    a: 'Yes, absolutely! While our standard packaging is in 250g, 500g, and 1kg, we regularly undertake bulk orders for festivals (like Diwali Faral), family gatherings, weddings, and corporate gifting. Please use our Bulk Inquiry Form or message us directly on WhatsApp to discuss custom weights and discounted pricing.'
+    q: 'What are the delivery options in Pune?',
+    a: 'Self-pickup is available for free at Dhayari Phata, Pune. For doorstep delivery across Pune (Kothrud, Baner, Aundh, Hadapsar, Sinhagad Road, etc.), we send orders via Dunzo/Porter or direct express courier.'
   },
   {
-    q: 'What is the shelf life of these snacks?',
-    a: 'Since we use refined rice bran oil and do not add any artificial preservatives, our Poha Chivda lasts beautifully for 4-6 weeks, and Shankarpali lasts for 3-4 weeks when stored in an airtight container in a cool, dry place.'
+    q: 'Can I place bulk orders for festivals, weddings, or corporate gifts?',
+    a: 'Yes! We regularly fulfill bulk orders for Diwali Faral, family functions, corporate gifting, and wedding snack hampers. Please click the "Bulk Inquiry" tab or message us directly on WhatsApp for discounted bulk pricing.'
+  },
+  {
+    q: 'What is the shelf life of Patal Poha Chivda?',
+    a: 'Stored in an airtight container in a dry place, our Premium Patal Poha Chivda stays fresh and crisp for 4 to 6 weeks without any artificial chemical preservatives.'
   }
 ];

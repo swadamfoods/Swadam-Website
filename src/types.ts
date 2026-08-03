@@ -1,4 +1,4 @@
-export type SnackWeight = 'Pocket pack(100gm)' | 'Regular pack(200gm)' | 'Large Pack(400gm)';
+export type SnackWeight = '1 Pack (200g)' | '2 Packs (400g)' | '3 Packs (600g)' | '1kg Box (5 x 200g Packs)';
 
 export interface ProductPricing {
   weight: SnackWeight;

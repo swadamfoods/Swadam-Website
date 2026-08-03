@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { ArrowLeft, Check, Sparkles, AlertCircle, ShieldCheck, Heart, Info } from 'lucide-react';
 import { SnackProduct, SnackWeight, CartItem } from '../types';
 import { ImageWithFallback } from './ImageWithFallback';
+import { FssaiLogo } from './FssaiLogo';
 import { Language, TRANSLATIONS, PRODUCT_TRANSLATIONS } from '../translations';
 
 interface ProductProfileProps {
@@ -35,135 +36,35 @@ export function ProductProfile({ product, cartItems, onAddToCart, onBack, lang }
   // Curate details matching the index.html template fields dynamically translated
   const getProductMeta = () => {
     if (lang === 'mr') {
-      switch (product.id) {
-        case 'prod-1':
-          return {
-            category: 'पारंपारिक चवदार',
-            tagline: 'चहाच्या वेळेचा तोंडात विरघळणारा खमंग आणि कुरकुरीत सोबती.',
-            allergen: 'गव्हाचे पीठ आणि दुग्धजन्य पदार्थ आहेत.',
-            origin: 'घरगुती किचन, पुणे',
-            shelfLife: '३० दिवस',
-            prepMethod: 'हाताने लाटलेले आणि तळलेले',
-            purityBadges: ['रिफाइंड राइस ब्रॅन ऑइल', 'बिना ब्लीच मैदा']
-          };
-        case 'prod-2':
-          return {
-            category: 'तिखट आणि चटपटीत',
-            tagline: 'पारंपारिक कुरकुरीत चव आणि चटपटीत घरगुती मसाल्यांचे कोटिंग.',
-            allergen: 'गव्हाचे पीठ आणि दुग्धजन्य पदार्थ आहेत.',
-            origin: 'घरगुती किचन, पुणे',
-            shelfLife: '३० दिवस',
-            prepMethod: 'मसाल्यात घोळवलेले',
-            purityBadges: ['घरगुती कुटलेले मसाले', 'शून्य प्रिझर्व्हेटिव्ह']
-          };
-        case 'prod-3':
-          return {
-            category: 'खमंग चिवडा',
-            tagline: 'उत्कृष्ट दर्जाचे काजू, खोबरे आणि शेंगदाणे घातलेला खमंग भाजका चिवडा.',
-            allergen: 'शेंगदाणे आणि काजू समाविष्ट आहेत.',
-            origin: 'घरगुती किचन, पुणे',
-            shelfLife: '४५ दिवस',
-            prepMethod: 'खमंग कढईत भाजलेले',
-            purityBadges: ['प्रीमियम ड्रायफ्रूट्स', 'कमी आणि उत्तम तेल']
-          };
-        default:
-          return {
-            category: 'विशेष चवदार',
-            tagline: 'घरगुती पद्धतीने शुद्ध साहित्यात तयार केलेले.',
-            allergen: 'गव्हाचे पीठ समाविष्ट आहे.',
-            origin: 'घरगुती किचन, पुणे',
-            shelfLife: '३० दिवस',
-            prepMethod: 'घरगुती कृती',
-            purityBadges: ['शुद्ध आणि प्रामाणिक', 'शून्य रसायने']
-          };
-      }
+      return {
+        category: 'विशेष खमंग चिवडा',
+        tagline: 'उत्कृष्ट काजू, खोबरे आणि शेंगदाणे घातलेला खमंग पातळ पोहा चिवडा.',
+        allergen: 'शेंगदाणे आणि काजू समाविष्ट आहेत.',
+        origin: 'घरगुती किचन, धायरी, पुणे',
+        shelfLife: '४५ दिवस',
+        prepMethod: 'रिफाइंड राइस ब्रॅन ऑइल मध्ये खमंग भाजलेले',
+        purityBadges: ['प्रीमियम काजू व शेंगदाणे', '१००% रिफाइंड राइस ब्रॅन ऑइल', 'शून्य वनस्पती व प्रिझर्व्हेटिव्ह']
+      };
     } else if (lang === 'hi') {
-      switch (product.id) {
-        case 'prod-1':
-          return {
-            category: 'क्लासिक नमकीन',
-            tagline: 'चाय के साथ मुंह में पिघल जाने वाला सही सुनहरा साथी।',
-            allergen: 'इसमें ग्लूटेन और डेयरी शामिल है।',
-            origin: 'घरेलू रसोई, पुणे',
-            shelfLife: '30 दिन',
-            prepMethod: 'हाथ से बेला और तला हुआ',
-            purityBadges: ['रिफाइंड राइस ब्रान ऑयल', 'बिना मैदा-ब्लीच']
-          };
-        case 'prod-2':
-          return {
-            category: 'तीखा चटपटा',
-            tagline: 'एक रोमांचक चटपटे मसाले के साथ पुराने जमाने का कुरकुरा स्वाद।',
-            allergen: 'इसमें ग्लूटेन और डेयरी शामिल है।',
-            origin: 'घरेलू रसोई, पुणे',
-            shelfLife: '30 दिन',
-            prepMethod: 'मसाला मिक्स',
-            purityBadges: ['हाथ से पिसे मसाले', 'बिना प्रिझर्व्हेटिव्ह']
-          };
-        case 'prod-3':
-          return {
-            category: 'भुना हुआ पोहा',
-            tagline: 'हाथ से चुने गए प्रीमियम सूखे मेवों से भरपूर कुरकुरे सुनहरे पोहे।',
-            allergen: 'इसमें मूंगफली और नट्स शामिल हैं।',
-            origin: 'घरेलू रसोई, पुणे',
-            shelfLife: '45 दिन',
-            prepMethod: 'हल्का भुना हुआ',
-            purityBadges: ['प्रोटीन युक्त काजू', 'कोल्ड-प्रेस तेल']
-          };
-        default:
-          return {
-            category: 'विशेष स्वाद',
-            tagline: 'प्रामाणिक स्वाद और शुद्ध सामग्रियों का मेल।',
-            allergen: 'गेहूं की सामग्री शामिल है।',
-            origin: 'घरेलू रसोई, पुणे',
-            shelfLife: '30 दिन',
-            prepMethod: 'घरेलू तैयारी',
-            purityBadges: ['शुद्ध और प्रामाणिक', 'शून्य रसायन']
-          };
-      }
+      return {
+        category: 'विशेष पोहा चिवड़ा',
+        tagline: 'काजू, सूखे नारियल और मूंगफली से भरपूर कुरकुरा पातल पोहा चिवड़ा।',
+        allergen: 'इसमें मूंगफली और नट्स शामिल हैं।',
+        origin: 'घरेलू रसोई, धायरी, पुणे',
+        shelfLife: '45 दिन',
+        prepMethod: '100% रिफाइंड राइस ब्रान ऑयल में भुना हुआ',
+        purityBadges: ['प्रीमियम सूखे मेवे', '100% रिफाइंड राइस ब्रान ऑयल', 'शून्य रसायन']
+      };
     } else {
-      // Default to English
-      switch (product.id) {
-        case 'prod-1':
-          return {
-            category: 'Classic Savory',
-            tagline: 'The perfect golden melt-in-mouth tea companion.',
-            allergen: 'Contains gluten and dairy.',
-            origin: 'Home-kitchen, Pune',
-            shelfLife: '30 Days',
-            prepMethod: 'Hand-rolled & Fried',
-            purityBadges: ['Refined Rice Bran Oil', 'No Maida-Bleach']
-          };
-        case 'prod-2':
-          return {
-            category: 'Bold & Tangy',
-            tagline: 'Old-school crunch combined with an exciting chatpata spice dust.',
-            allergen: 'Contains gluten and dairy.',
-            origin: 'Home-kitchen, Pune',
-            shelfLife: '30 Days',
-            prepMethod: 'Masala-tumbled',
-            purityBadges: ['Handground Spices', 'Zero Preservatives']
-          };
-        case 'prod-3':
-          return {
-            category: 'Golden Poha',
-            tagline: 'Crunchy golden flakes enriched with hand-selected premium dry fruits.',
-            allergen: 'Contains peanuts/nuts.',
-            origin: 'Home-kitchen, Pune',
-            shelfLife: '45 Days',
-            prepMethod: 'Gentle pan-roast',
-            purityBadges: ['High-Protein Nuts', 'Cold-Pressed Oils']
-          };
-        default:
-          return {
-            category: 'Special Taste',
-            tagline: 'Authentic taste kneaded with pristine ingredients.',
-            allergen: 'Standard wheat ingredients.',
-            origin: 'Home-kitchen, Pune',
-            shelfLife: '30 Days',
-            prepMethod: 'Homemade Craft',
-            purityBadges: ['Pure & Honest', 'Zero Chemicals']
-          };
-      }
+      return {
+        category: 'Signature Chivda',
+        tagline: 'Crunchy golden flaked rice enriched with whole cashews, roasted peanuts & coconut slices.',
+        allergen: 'Contains peanuts and cashew nuts.',
+        origin: 'Home-Kitchen, Dhayari, Pune',
+        shelfLife: '45 Days',
+        prepMethod: 'Gentle pan-roasted in 100% Refined Rice Bran Oil',
+        purityBadges: ['Premium Whole Cashews', '100% Refined Rice Bran Oil', 'Zero Preservatives']
+      };
     }
   };
 
@@ -201,19 +102,9 @@ export function ProductProfile({ product, cartItems, onAddToCart, onBack, lang }
   // Dynamic ingredients translations for a high-end local touch
   const getLocalizedIngredients = () => {
     if (lang === 'mr') {
-      switch (product.id) {
-        case 'prod-1': return ['शुद्ध गव्हाचे पीठ', 'रिफाइंड राइस ब्रॅन ऑइल', 'हलके चवीचे मीठ', 'डबल-फिल्टर केलेले तेल'];
-        case 'prod-2': return ['उत्कृष्ट गव्हाचे पीठ', 'रिफाइंड राइस ब्रॅन ऑइल', 'आमचूर पावडर', 'लाल मिरची पावडर', 'सेंद्रिय साखर', 'चाट मसाला'];
-        case 'prod-3': return ['पातळ भाजके पोहे', 'भाजलेले काजू', 'शेंगदाणे', 'सुके खोबरे काप', 'कढीपत्ता', 'हिरवी मिरची', 'हळद', 'विशेष पुणेरी मसाले'];
-        default: return product.ingredients;
-      }
+      return ['कागदी पातळ भाजके पोहे', '१००% रिफाइंड राइस ब्रॅन ऑइल', 'भाजलेले अख्खे काजू', 'निवडक शेंगदाणे', 'सुके खोबरे काप', 'कढीपत्ता व हिरवी मिरची', 'हळद व हलके मीठ', 'विशेष पुणेरी मसाले'];
     } else if (lang === 'hi') {
-      switch (product.id) {
-        case 'prod-1': return ['शुद्ध गेहूं का आटा', 'रिफाइंड राइस ब्रान ऑयल', 'हल्का नमक', 'डबल-फिल्टर्ड तेल'];
-        case 'prod-2': return ['प्रीमियम गेहूं का आटा', 'रिफाइंड राइस ब्रान ऑयल', 'अमचूर पाउडर', 'लाल मिर्च पाउडर', 'जैविक चीनी', 'चाट मसाला'];
-        case 'prod-3': return ['पतले भुने हुए पोहे', 'रोस्टेड काजू', 'मूंगफली', 'सूखा नारियल', 'हरी मिर्च', 'कढ़ी पत्ता', 'हल्दी', 'विशेष पुणेरी मसाला'];
-        default: return product.ingredients;
-      }
+      return ['पतले भुने हुए पोहे', '100% रिफाइंड राइस ब्रान ऑयल', 'रोस्टेड साबुत काजू', 'मूंगफली', 'सूखा नारियल', 'हरी मिर्च व कढ़ी पत्ता', 'हल्दी व हल्का नमक', 'विशेष पुणेरी मसाला'];
     }
     return product.ingredients;
   };
@@ -367,6 +258,9 @@ export function ProductProfile({ product, cartItems, onAddToCart, onBack, lang }
             ))}
           </div>
 
+          {/* FSSAI Registration Badge Banner */}
+          <FssaiLogo variant="full" />
+
           {/* Size Select Weights */}
           <div className="pt-4 border-t border-[var(--border)]">
             <h4 className="text-xs font-bold tracking-[1.5px] uppercase text-[var(--gold)] mb-3">
@@ -448,6 +342,9 @@ export function ProductProfile({ product, cartItems, onAddToCart, onBack, lang }
               </span>
               <span className="price-tag text-3xl font-bold text-[var(--gold)] font-sans mt-0.5">
                 ₹{activePrice}
+              </span>
+              <span className="text-[10px] text-[var(--text-muted)] font-medium mt-0.5">
+                {t.gstIncluded}
               </span>
             </div>
 

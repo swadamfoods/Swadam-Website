@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { X, Trash2, Plus, Minus, ShoppingBag, Send, Check, ChevronLeft, ArrowRight, AlertCircle } from 'lucide-react';
 import { CartItem, SnackWeight } from '../types';
 import { ImageWithFallback } from './ImageWithFallback';
+import { FssaiLogo } from './FssaiLogo';
 import { WHATSAPP_URL_NUMBER } from '../data';
 import { Language, TRANSLATIONS, PRODUCT_TRANSLATIONS } from '../translations';
 
@@ -473,6 +474,10 @@ export function BasketDrawer({
                     )}
                   </button>
                 )}
+
+                <div className="flex justify-center pt-1">
+                  <FssaiLogo variant="compact" />
+                </div>
               </div>
             )}
           </motion.div>
