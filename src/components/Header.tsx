@@ -139,6 +139,8 @@ export function Header({
             <div className={`relative flex items-center gap-0.5 sm:gap-1 bg-[var(--surface)] border ${showGlow ? 'border-[var(--gold)]/50' : 'border-[var(--border)]'} rounded-full px-1.5 py-1 sm:px-2.5 sm:py-1.5 hover:border-[var(--gold)] transition-all cursor-pointer`}>
               <Languages className={`w-3.5 h-3.5 ${showGlow ? 'text-[var(--gold)]' : 'text-[var(--text-muted)]'} shrink-0`} />
               <select
+                id="header-lang-select"
+                name="language"
                 value={lang}
                 onChange={(e) => setLang(e.target.value as Language)}
                 className="bg-transparent text-[10px] sm:text-[11px] font-bold text-[var(--text)] focus:outline-none cursor-pointer pr-0.5"

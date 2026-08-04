@@ -260,7 +260,6 @@ export function BasketDrawer({
                         <div className="w-16 h-16 rounded-xl overflow-hidden shrink-0 border border-[var(--border)] bg-black/10">
                           <ImageWithFallback
                             src={`/${item.product.imageFileName}`}
-                            fallbackSrc={item.product.fallbackUnsplashUrl}
                             alt={pTrans.name}
                             className="w-full h-full object-cover"
                           />
@@ -363,6 +362,7 @@ export function BasketDrawer({
                       <label htmlFor="customer-name" className="block text-[10px] font-bold text-[var(--text-muted)] uppercase tracking-wider mb-1.5">{t.basketYourName}</label>
                       <input
                         id="customer-name"
+                        name="customerName"
                         type="text"
                         required
                         value={customerName}
@@ -423,6 +423,7 @@ export function BasketDrawer({
                         <label htmlFor="delivery-address" className="block text-[10px] font-bold text-[var(--text-muted)] uppercase tracking-wider mb-1.5">{t.basketAddress}</label>
                         <textarea
                           id="delivery-address"
+                          name="deliveryAddress"
                           required={deliveryMethod !== 'pickup'}
                           value={deliveryAddress}
                           onChange={(e) => setDeliveryAddress(e.target.value)}

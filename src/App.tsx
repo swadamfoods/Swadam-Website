@@ -22,7 +22,7 @@ import { AboutSection } from './components/AboutSection';
 import { ImageWithFallback } from './components/ImageWithFallback';
 import { FssaiLogo } from './components/FssaiLogo';
 
-import { SNACK_PRODUCTS, TESTIMONIALS, WHATSAPP_NUMBER, WHATSAPP_URL_NUMBER, BUSINESS_EMAIL, INSTAGRAM_ID, INSTAGRAM_URL, FACEBOOK_URL, TWITTER_URL, YOUTUBE_URL, LINKEDIN_URL, FSSAI_NUMBER } from './data';
+import { SNACK_PRODUCTS, TESTIMONIALS, WHATSAPP_NUMBER, WHATSAPP_URL_NUMBER, BUSINESS_EMAIL, INSTAGRAM_ID, INSTAGRAM_URL, FACEBOOK_URL, TWITTER_URL, YOUTUBE_URL, LINKEDIN_URL, FSSAI_NUMBER, GST_NUMBER } from './data';
 import { SnackProduct, SnackWeight, CartItem } from './types';
 import { Language, TRANSLATIONS } from './translations';
 
@@ -85,6 +85,71 @@ export default function App() {
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Funny Developer Tools Console Message
+  useEffect(() => {
+    console.log(
+      `%c 🌶️ Swadam Foods | Top Secret Recipe Terminal %c\n\n` +
+      `Hey developer! 🕵️‍♂️ Looking for Swadam Foods' secret Patal Poha Chivda recipe in DevTools?\n\n` +
+      `Nice try! But our authentic spice blend is encrypted with 256-bit Maharashtrian Love 💛\n` +
+      `No console hack or breakpoint can steal the crunch!\n\n` +
+      `Instead of inspecting DOM elements, why not inspect our crispy snacks in your basket?\n` +
+      `👉 Order now on WhatsApp before today's fresh batch sells out! 😋\n\n` +
+      `[Status: 200 OK | Crunchy & Fresh 🍿]`,
+      'color: #eab308; font-size: 16px; font-weight: bold; background: #18181b; padding: 12px 18px; border-radius: 10px; border: 1px solid #eab308;',
+      'color: #f4f4f5; font-size: 13px; font-weight: normal; line-height: 1.6;'
+    );
+  }, []);
+
+  // Disable right-click, selection, dragging, and developer tools shortcuts
+  useEffect(() => {
+    const handleContextMenu = (e: MouseEvent) => {
+      e.preventDefault();
+      return false;
+    };
+
+    const handleDragStart = (e: DragEvent) => {
+      e.preventDefault();
+      return false;
+    };
+
+    const handleSelectStart = (e: Event) => {
+      const target = e.target as HTMLElement | null;
+      if (target && (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA')) {
+        return true;
+      }
+      e.preventDefault();
+      return false;
+    };
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      const target = e.target as HTMLElement | null;
+      const isInput = target && (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA');
+
+      // Block F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U, Ctrl+S
+      if (
+        e.key === 'F12' ||
+        (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i' || e.key === 'J' || e.key === 'j' || e.key === 'C' || e.key === 'c')) ||
+        (e.ctrlKey && (e.key === 'u' || e.key === 'U' || e.key === 's' || e.key === 'S' || e.key === 'p' || e.key === 'P')) ||
+        (!isInput && e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'a' || e.key === 'A'))
+      ) {
+        e.preventDefault();
+        return false;
+      }
+    };
+
+    document.addEventListener('contextmenu', handleContextMenu);
+    document.addEventListener('dragstart', handleDragStart);
+    document.addEventListener('selectstart', handleSelectStart);
+    document.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      document.removeEventListener('contextmenu', handleContextMenu);
+      document.removeEventListener('dragstart', handleDragStart);
+      document.removeEventListener('selectstart', handleSelectStart);
+      document.removeEventListener('keydown', handleKeyDown);
+    };
   }, []);
 
   const handleAddToCart = (product: SnackProduct, weight: SnackWeight, quantity: number) => {
@@ -447,6 +512,12 @@ export default function App() {
                 <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="text-[var(--gold)] font-mono hover:underline font-bold">
                   {INSTAGRAM_ID}
                 </a>
+              </p>
+              <p className="text-[var(--text-muted)]">
+                <strong>GSTIN:</strong> <br />
+                <span className="text-[var(--gold)] font-mono font-bold select-text tracking-wider">
+                  {GST_NUMBER}
+                </span>
               </p>
               <div className="pt-2">
                 <p className="text-[10px] uppercase tracking-wider font-bold text-[var(--text-muted)] mb-2">Connect With Us:</p>

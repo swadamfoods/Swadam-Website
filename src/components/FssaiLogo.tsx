@@ -1,5 +1,5 @@
 import React from 'react';
-import { FSSAI_NUMBER } from '../data';
+import { FSSAI_NUMBER, GST_NUMBER } from '../data';
 
 interface FssaiLogoProps {
   className?: string;
@@ -73,8 +73,8 @@ export const FssaiLogo: React.FC<FssaiLogoProps> = ({
             <span className="text-[11px] text-zinc-600 dark:text-zinc-400 font-medium mt-0.5">
               Registration Lic. No. <strong className="font-mono text-zinc-900 dark:text-zinc-100">{FSSAI_NUMBER}</strong>
             </span>
-            <span className="text-[10px] text-zinc-500 dark:text-zinc-500 mt-0.5">
-              Food Safety & Standards Act, 2006 Govt. Compliant
+            <span className="text-[11px] text-zinc-600 dark:text-zinc-400 font-medium mt-0.5">
+              GSTIN: <strong className="font-mono text-zinc-900 dark:text-zinc-100">{GST_NUMBER}</strong>
             </span>
           </div>
         </div>

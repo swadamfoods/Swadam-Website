@@ -12,6 +12,7 @@ export const LINKEDIN_URL = 'https://www.linkedin.com/company/swadamfoods';
 export const BUSINESS_OWNER = 'Vidya Dandekar';
 export const BUSINESS_LOCATION = 'Dhayari, Pune, Maharashtra';
 export const FSSAI_NUMBER = '21526080002094';
+export const GST_NUMBER = '27AOCPD1930N1Z1';
 
 export const SNACK_PRODUCTS: SnackProduct[] = [
   {

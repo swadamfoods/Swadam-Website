@@ -267,6 +267,7 @@ export function BulkInquiryForm({ lang }: BulkInquiryFormProps) {
                       </label>
                       <input
                         id="bulk-name"
+                        name="name"
                         type="text"
                         required
                         value={name}
@@ -282,6 +283,7 @@ export function BulkInquiryForm({ lang }: BulkInquiryFormProps) {
                       </label>
                       <input
                         id="bulk-phone"
+                        name="phone"
                         type="tel"
                         required
                         value={phone}
@@ -299,6 +301,7 @@ export function BulkInquiryForm({ lang }: BulkInquiryFormProps) {
                       </label>
                       <select
                         id="bulk-product"
+                        name="selectedProduct"
                         value={selectedProduct}
                         onChange={(e) => setSelectedProduct(e.target.value)}
                         className="w-full bg-white/5 border border-[var(--border)] px-4 py-3 rounded-xl text-sm text-[var(--text)] focus:outline-none focus:border-[var(--border-hover)] transition-all cursor-pointer"
@@ -317,6 +320,7 @@ export function BulkInquiryForm({ lang }: BulkInquiryFormProps) {
                       </label>
                       <input
                         id="bulk-quantity"
+                        name="quantity"
                         type="text"
                         required
                         value={quantity}
@@ -333,6 +337,7 @@ export function BulkInquiryForm({ lang }: BulkInquiryFormProps) {
                     </label>
                     <textarea
                       id="bulk-purpose"
+                      name="purpose"
                       value={purpose}
                       onChange={(e) => setPurpose(e.target.value)}
                       placeholder={tForm.placeholderPurpose}
