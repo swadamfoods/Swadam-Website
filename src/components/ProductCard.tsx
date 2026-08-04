@@ -79,7 +79,6 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, cartItems, on
         </span>
         <ImageWithFallback
           src={`/${product.imageFileName}`}
-          fallbackSrc={product.fallbackUnsplashUrl}
           alt={prodTrans.name}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-108"
         />

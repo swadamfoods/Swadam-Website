@@ -228,7 +228,6 @@ export function AboutSection({ lang }: AboutSectionProps) {
             <div className="aspect-[3/4] rounded-[24px] overflow-hidden border border-[var(--border)] shadow-xl relative bg-white/5 group">
               <ImageWithFallback
                 src="/about-us.jpg"
-                fallbackSrc="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=800&q=80"
                 alt="Vidya Dandekar Kitchen Setup"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />

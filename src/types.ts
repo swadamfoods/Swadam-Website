@@ -12,12 +12,12 @@ export interface SnackProduct {
   longDescription: string;
   pricing: ProductPricing[];
   defaultWeight: SnackWeight;
-  imageFileName: string; // Primary image filename (e.g. 'salted.jpg')
-  imageFileNames: string[]; // Trio of image filenames (e.g. ['salted.jpg', 'salted-2.jpg', 'salted-3.jpg'])
-  fallbackUnsplashUrl: string; // Primary fallback
-  fallbackUnsplashUrls: string[]; // Trio of fallback Unsplash URLs
+  imageFileName: string; // Primary image filename (e.g. 'patal-poha-chivda.jpg')
+  imageFileNames: string[]; // Trio of image filenames
+  fallbackUnsplashUrl?: string; // Optional primary fallback
+  fallbackUnsplashUrls?: string[]; // Optional fallback Unsplash URLs
   videoFileName?: string; // Optional custom local video filename
-  fallbackVideoUrl?: string; // Optional high-quality fallback video stream URL
+  fallbackVideoUrl?: string; // Optional video stream URL
   ingredients: string[];
   keyHighlights: string[];
 }

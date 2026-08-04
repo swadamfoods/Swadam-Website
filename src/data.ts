@@ -28,14 +28,7 @@ export const SNACK_PRODUCTS: SnackProduct[] = [
     defaultWeight: '1 Pack (200g)',
     imageFileName: 'patal-poha-chivda.jpg',
     imageFileNames: ['patal-poha-chivda.jpg', 'patal-poha-chivda-1.jpg', 'patal-poha-chivda-2.jpg', 'patal-poha-chivda-3.jpg'],
-    fallbackUnsplashUrl: 'https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=800&q=80',
-    fallbackUnsplashUrls: [
-      'https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80'
-    ],
     videoFileName: 'patal-poha-chivda-video.mp4',
-    fallbackVideoUrl: 'https://assets.mixkit.co/videos/preview/mixkit-cooking-with-oil-in-a-frying-pan-40242-large.mp4',
     ingredients: [
       'Paper-Thin Flaked Rice (Patal Poha)',
       '100% Refined Rice Bran Oil',

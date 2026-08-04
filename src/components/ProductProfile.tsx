@@ -77,22 +77,19 @@ export function ProductProfile({ product, cartItems, onAddToCart, onBack, lang }
 
   // Dynamically assemble media items from product properties
   const mediaItems = [
-    ...(product.imageFileNames || []).map((fn, idx) => ({
+    ...(product.imageFileNames || []).map((fn) => ({
       type: 'image' as const,
-      url: `/${fn}`,
-      fallbackUrl: product.fallbackUnsplashUrls?.[idx] || product.fallbackUnsplashUrl
+      url: `/${fn}`
     })),
-    ...(product.fallbackVideoUrl || product.videoFileName ? [{
+    ...(product.videoFileName ? [{
       type: 'video' as const,
-      url: product.videoFileName ? `/${product.videoFileName}` : undefined,
-      fallbackUrl: product.fallbackVideoUrl
+      url: `/${product.videoFileName}`
     }] : [])
   ];
 
   const activeMedia = mediaItems[activeThumbIndex] || mediaItems[0] || {
     type: 'image' as const,
-    url: `/${product.imageFileName}`,
-    fallbackUrl: product.fallbackUnsplashUrl
+    url: `/${product.imageFileName}`
   };
 
   const isInCart = cartItems.some(
@@ -132,7 +129,7 @@ export function ProductProfile({ product, cartItems, onAddToCart, onBack, lang }
             <AnimatePresence mode="wait">
               {activeMedia.type === 'image' ? (
                 <motion.div
-                  key={activeMedia.url || activeMedia.fallbackUrl}
+                  key={activeMedia.url}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
@@ -141,7 +138,6 @@ export function ProductProfile({ product, cartItems, onAddToCart, onBack, lang }
                 >
                   <ImageWithFallback
                     src={activeMedia.url || ''}
-                    fallbackSrc={activeMedia.fallbackUrl || ''}
                     alt={prodTrans.name}
                     className="w-full h-full object-cover"
                   />
@@ -175,7 +171,6 @@ export function ProductProfile({ product, cartItems, onAddToCart, onBack, lang }
                     className="w-full h-full object-cover"
                   >
                     <source src={activeMedia.url} type="video/mp4" />
-                    <source src={activeMedia.fallbackUrl} type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </motion.div>
@@ -198,7 +193,6 @@ export function ProductProfile({ product, cartItems, onAddToCart, onBack, lang }
                   {item.type === 'image' ? (
                     <ImageWithFallback
                       src={item.url || ''}
-                      fallbackSrc={item.fallbackUrl || ''}
                       alt={`${prodTrans.name} Thumb ${idx + 1}`}
                       className="w-full h-full object-cover"
                     />
@@ -207,7 +201,6 @@ export function ProductProfile({ product, cartItems, onAddToCart, onBack, lang }
                       <div className="absolute inset-0 opacity-40">
                         <ImageWithFallback
                           src={`/${product.imageFileName}`}
-                          fallbackSrc={product.fallbackUnsplashUrl}
                           alt={`${prodTrans.name} Video Poster`}
                           className="w-full h-full object-cover"
                         />

@@ -81,15 +81,27 @@ h1, h2, h3, h4, .brand-title {
 .blob { 
   position: absolute; 
   border-radius: 50%; 
-  filter: blur(60px); 
+  filter: blur(50px); 
   animation: float 25s infinite ease-in-out; 
   will-change: transform;
   transform: translateZ(0);
-  opacity: 0.6;
+  opacity: 0.5;
 }
 .blob-1 { width: 45vw; height: 45vw; max-width: 400px; max-height: 400px; background: var(--blob-1); top: -10%; right: 10%; }
 .blob-2 { width: 50vw; height: 50vw; max-width: 480px; max-height: 480px; background: var(--blob-2); bottom: -10%; left: -10%; animation-delay: -6s; }
 .blob-3 { width: 35vw; height: 35vw; max-width: 320px; max-height: 320px; background: var(--blob-3); top: 40%; left: 30%; animation-delay: -12s; }
+
+/* Low-end mobile optimization */
+@media (max-width: 768px) {
+  .blob {
+    filter: blur(25px);
+    animation: none; /* disables CPU animation loops on lower-end devices */
+    opacity: 0.35;
+  }
+  nav, .mobile-bottom-nav, .glass-hero-card, .glass-product-card {
+    backdrop-filter: blur(8px) !important; /* reduces GPU compositing workload */
+  }
+}
 
 @keyframes float {
   0%, 100% { transform: translate3d(0, 0, 0) scale(1); }

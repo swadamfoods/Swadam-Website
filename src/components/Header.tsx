@@ -49,22 +49,21 @@ export function Header({
   return (
     <>
       {/* Desktop & Mobile Glass Pill Header Navigation */}
-      <nav className="fixed top-6 left-[5%] right-[5%] px-6 py-3 bg-[var(--surface)] backdrop-blur-2xl border border-[var(--border)] rounded-full flex justify-between items-center z-50 shadow-[0_10px_40px_var(--shadow)] transition-all duration-350">
+      <nav className="fixed top-3 sm:top-6 left-2 right-2 sm:left-[5%] sm:right-[5%] px-3 py-2 sm:px-6 sm:py-3 bg-[var(--surface)] backdrop-blur-xl border border-[var(--border)] rounded-full flex justify-between items-center z-50 shadow-[0_10px_40px_var(--shadow)] transition-all duration-350 max-w-7xl mx-auto">
         {/* Logo Container */}
         <div 
-          className="flex items-center gap-3 cursor-pointer select-none"
+          className="flex items-center gap-1.5 sm:gap-3 cursor-pointer select-none min-w-0 shrink"
           onClick={() => handleNavClick('home')}
         >
           <img 
             src="/swadam-logo.png" 
             alt="Swadam Foods Logo" 
-            className="h-10 w-10 rounded-full border border-[var(--border)] bg-[#fffcf9] object-contain p-0.5"
+            className="h-8 w-8 sm:h-10 sm:w-10 rounded-full border border-[var(--border)] bg-[#fffcf9] object-contain p-0.5 shrink-0"
             onError={(e) => {
-              // fallback in case of logo load failure
-              (e.currentTarget as HTMLImageElement).src = "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=100&h=100&fit=crop&q=80";
+              (e.currentTarget as HTMLImageElement).style.visibility = 'hidden';
             }}
           />
-          <span className="logo-text font-cursive text-[1.6rem] sm:text-[1.8rem] md:text-[2.1rem] text-[var(--gold)] drop-shadow-sm font-normal tracking-[0.5px] leading-none transition-transform duration-300 hover:scale-[1.03]">
+          <span className="logo-text font-cursive text-[1.2rem] xs:text-[1.4rem] sm:text-[1.8rem] md:text-[2.1rem] text-[var(--gold)] drop-shadow-sm font-normal tracking-[0.2px] leading-none transition-transform duration-300 hover:scale-[1.03] truncate min-w-0">
             Swadam Foods
           </span>
         </div>
@@ -110,7 +109,7 @@ export function Header({
         </ul>
 
         {/* Actions Button Bar */}
-        <div className="flex items-center gap-2 sm:gap-3">
+        <div className="flex items-center gap-1 sm:gap-3 shrink-0 ml-1">
           {/* Language Switcher Dropdown */}
           <div className="relative group z-50">
             {/* Animated Glow Ring */}
@@ -126,8 +125,8 @@ export function Header({
               </span>
             )}
 
-            {/* Popup Tooltip */}
-            <div className="absolute top-[calc(100%+12px)] right-0 flex flex-col items-end pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            {/* Popup Tooltip (Desktop/Tablet) */}
+            <div className="hidden sm:flex absolute top-[calc(100%+12px)] right-0 flex-col items-end pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               {/* Up arrow */}
               <div className={`w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-b-[6px] border-b-[var(--gold)] mr-4 ${showGlow ? 'animate-bounce' : ''} relative top-[1px]`}></div>
               {/* Tooltip body */}
@@ -137,12 +136,12 @@ export function Header({
               </div>
             </div>
 
-            <div className={`relative flex items-center gap-1 bg-[var(--surface)] border ${showGlow ? 'border-[var(--gold)]/50' : 'border-[var(--border)]'} rounded-full px-2 py-1 sm:px-2.5 sm:py-1.5 hover:border-[var(--gold)] transition-all cursor-pointer`}>
+            <div className={`relative flex items-center gap-0.5 sm:gap-1 bg-[var(--surface)] border ${showGlow ? 'border-[var(--gold)]/50' : 'border-[var(--border)]'} rounded-full px-1.5 py-1 sm:px-2.5 sm:py-1.5 hover:border-[var(--gold)] transition-all cursor-pointer`}>
               <Languages className={`w-3.5 h-3.5 ${showGlow ? 'text-[var(--gold)]' : 'text-[var(--text-muted)]'} shrink-0`} />
               <select
                 value={lang}
                 onChange={(e) => setLang(e.target.value as Language)}
-                className="bg-transparent text-[10px] sm:text-[11px] font-bold text-[var(--text)] focus:outline-none cursor-pointer pr-1"
+                className="bg-transparent text-[10px] sm:text-[11px] font-bold text-[var(--text)] focus:outline-none cursor-pointer pr-0.5"
                 aria-label="Language Selector"
               >
                 <option value="en" className="bg-[var(--surface)] text-[var(--text)]">EN</option>
