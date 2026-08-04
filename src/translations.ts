@@ -4,7 +4,7 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
   en: {
     // Header
     navHome: 'Home',
-    navOurSnacks: 'Our Chivda',
+    navOurSnacks: 'Our Products',
     navOurStory: 'Our Story',
     navBulkInquiry: 'Bulk Orders',
     themeDark: 'Dark Mode',
@@ -86,7 +86,7 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
   hi: {
     // Header
     navHome: 'होम',
-    navOurSnacks: 'हमारा चिवड़ा',
+    navOurSnacks: 'हमारे उत्पाद',
     navOurStory: 'हमारी कहानी',
     navBulkInquiry: 'थोक ऑर्डर',
     themeDark: 'डार्क मोड',
@@ -168,7 +168,7 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
   mr: {
     // Header
     navHome: 'मुख्यपृष्ठ',
-    navOurSnacks: 'आमचा चिवडा',
+    navOurSnacks: 'आमची उत्पादने',
     navOurStory: 'आमची गोष्ट',
     navBulkInquiry: 'घाऊक ऑर्डर्स',
     themeDark: 'डार्क मोड',

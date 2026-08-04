@@ -1,9 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@400;600;700&family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Pacifico&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Satisfy&display=swap');
 @import "tailwindcss";
 
 @theme {
   --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
   --font-serif: "Cinzel", Georgia, serif;
+  --font-cursive: "Great Vibes", "Dancing Script", "Alex Brush", "Satisfy", "Pacifico", cursive;
+}
+
+.font-cursive {
+  font-family: "Great Vibes", "Dancing Script", "Alex Brush", "Satisfy", "Pacifico", cursive !important;
 }
 
 :root {
@@ -64,23 +69,32 @@ h1, h2, h3, h4, .brand-title {
   letter-spacing: 1px;
 }
 
-/* --- AMBIENT GLOW EFFECTS --- */
+/* --- AMBIENT GLOW EFFECTS (Performance Optimized) --- */
 .ambient-glow {
   position: fixed;
   inset: 0;
   z-index: -1;
   overflow: hidden;
   pointer-events: none;
+  transform: translateZ(0);
 }
-.blob { position: absolute; border-radius: 50%; filter: blur(140px); animation: float 20s infinite ease-in-out; }
-.blob-1 { width: 50vw; height: 50vw; max-width: 500px; max-height: 500px; background: var(--blob-1); top: -10%; right: 10%; }
-.blob-2 { width: 60vw; height: 60vw; max-width: 600px; max-height: 600px; background: var(--blob-2); bottom: -10%; left: -10%; animation-delay: -5s; }
-.blob-3 { width: 40vw; height: 40vw; max-width: 400px; max-height: 400px; background: var(--blob-3); top: 40%; left: 30%; animation-delay: -10s; }
+.blob { 
+  position: absolute; 
+  border-radius: 50%; 
+  filter: blur(60px); 
+  animation: float 25s infinite ease-in-out; 
+  will-change: transform;
+  transform: translateZ(0);
+  opacity: 0.6;
+}
+.blob-1 { width: 45vw; height: 45vw; max-width: 400px; max-height: 400px; background: var(--blob-1); top: -10%; right: 10%; }
+.blob-2 { width: 50vw; height: 50vw; max-width: 480px; max-height: 480px; background: var(--blob-2); bottom: -10%; left: -10%; animation-delay: -6s; }
+.blob-3 { width: 35vw; height: 35vw; max-width: 320px; max-height: 320px; background: var(--blob-3); top: 40%; left: 30%; animation-delay: -12s; }
 
 @keyframes float {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  33% { transform: translate(5%, -5%) scale(1.1); }
-  66% { transform: translate(-3%, 4%) scale(0.9); }
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  33% { transform: translate3d(4%, -4%, 0) scale(1.05); }
+  66% { transform: translate3d(-3%, 3%, 0) scale(0.95); }
 }
 
 .mandala-overlay {
@@ -89,7 +103,7 @@ h1, h2, h3, h4, .brand-title {
   width: 100vh; height: 100vh;
   background: radial-gradient(circle, transparent 30%, var(--bg) 80%),
               url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" stroke="rgba(212,175,55,0.04)" stroke-width="0.5" fill="none"/><path d="M50 0 L50 100 M0 50 L100 50" stroke="rgba(212,175,55,0.03)" stroke-width="0.5"/></svg>');
-  z-index: -1; opacity: 0.8; pointer-events: none;
+  z-index: -1; opacity: 0.6; pointer-events: none;
 }
 
 /* Custom classes for aesthetic integration */
@@ -102,19 +116,21 @@ h1, h2, h3, h4, .brand-title {
 
 .glass-hero-card {
   width: 100%; max-width: 450px; aspect-ratio: 1;
-  background: var(--surface); backdrop-filter: blur(30px); border: 1px solid var(--border);
-  border-radius: 30px; padding: 3rem; box-shadow: 0 30px 60px var(--shadow);
+  background: var(--surface); backdrop-filter: blur(12px); border: 1px solid var(--border);
+  border-radius: 30px; padding: 3rem; box-shadow: 0 20px 40px var(--shadow);
   display: flex; justify-content: center; align-items: center; transition: var(--transition);
+  will-change: transform;
 }
-.glass-hero-card:hover { border-color: var(--border-hover); transform: rotateY(5deg) rotateX(-5deg); }
-.glass-hero-card img { width: 100%; height: auto; object-fit: contain; filter: drop-shadow(0 15px 30px var(--shadow)); border-radius: 15px;}
+.glass-hero-card:hover { border-color: var(--border-hover); transform: translateY(-4px); }
+.glass-hero-card img { width: 100%; height: auto; object-fit: contain; filter: drop-shadow(0 10px 20px var(--shadow)); border-radius: 15px;}
 
 .glass-product-card {
-  background: var(--surface); backdrop-filter: blur(25px); border: 1px solid var(--border);
+  background: var(--surface); backdrop-filter: blur(10px); border: 1px solid var(--border);
   border-radius: 24px; overflow: hidden; transition: var(--transition);
   display: flex; flex-direction: column; cursor: pointer;
+  will-change: transform;
 }
-.glass-product-card:hover { transform: translateY(-6px); border-color: var(--border-hover); box-shadow: 0 20px 40px var(--shadow); }
+.glass-product-card:hover { transform: translateY(-4px); border-color: var(--border-hover); box-shadow: 0 15px 30px var(--shadow); }
 
 .weight-pill {
   background: rgba(255,255,255,0.05); border: 1px solid var(--border); color: var(--text-muted);

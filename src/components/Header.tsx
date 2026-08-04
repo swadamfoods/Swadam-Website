@@ -64,8 +64,8 @@ export function Header({
               (e.currentTarget as HTMLImageElement).src = "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=100&h=100&fit=crop&q=80";
             }}
           />
-          <span className="logo-text font-serif text-[1.1rem] font-bold uppercase tracking-[2px] text-[var(--text)]">
-            Swadam
+          <span className="logo-text font-cursive text-[1.6rem] sm:text-[1.8rem] md:text-[2.1rem] text-[var(--gold)] drop-shadow-sm font-normal tracking-[0.5px] leading-none transition-transform duration-300 hover:scale-[1.03]">
+            Swadam Foods
           </span>
         </div>
 

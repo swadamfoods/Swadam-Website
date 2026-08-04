@@ -78,26 +78,6 @@ export default function App() {
     localStorage.setItem('swadam_lang', lang);
   }, [lang]);
 
-  // Disable right click & inspect element shortcuts
-  useEffect(() => {
-    const handleContextMenu = (e: MouseEvent) => e.preventDefault();
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (
-        e.key === 'F12' ||
-        (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i' || e.key === 'J' || e.key === 'j')) ||
-        (e.ctrlKey && (e.key === 'U' || e.key === 'u' || e.key === 'S' || e.key === 's'))
-      ) {
-        e.preventDefault();
-      }
-    };
-    document.addEventListener('contextmenu', handleContextMenu);
-    document.addEventListener('keydown', handleKeyDown);
-    return () => {
-      document.removeEventListener('contextmenu', handleContextMenu);
-      document.removeEventListener('keydown', handleKeyDown);
-    };
-  }, []);
-
   // Scroll to Top visibility
   useEffect(() => {
     const handleScroll = () => {
@@ -495,21 +475,22 @@ export default function App() {
 
           </div>
 
-          {/* Copyright block */}
-          <div className="pt-8 flex flex-col sm:flex-row justify-between items-center text-[10px] text-[var(--text-muted)] opacity-60 uppercase tracking-wider font-semibold gap-4 font-sans">
-            <p>
+          {/* Food Love Sentences Footer */}
+          <div className="pt-8 border-t border-[var(--border)] flex flex-col sm:flex-row justify-between items-center text-[11px] text-[var(--text-muted)] opacity-85 uppercase tracking-wider font-semibold gap-4 font-sans">
+            <p className="flex items-center gap-1.5">
+              <Heart className="w-3.5 h-3.5 text-rose-500 fill-rose-500 animate-pulse" />
               {lang === 'mr' 
-                ? `© ${new Date().getFullYear()} स्वादम् फूड्स पुणे. सर्व हक्क राखीव.` 
+                ? 'अस्सल घरगुती अन्नातूनच मिळतो खरा आनंद आणि तृप्ती.' 
                 : lang === 'hi' 
-                ? `© ${new Date().getFullYear()} स्वादम् फूड्स पुणे. सर्वाधिकार सुरक्षित।` 
-                : `© ${new Date().getFullYear()} Swadam Foods Pune. All Rights Reserved.`}
+                ? 'अस्ली घर के खाने से ही मिलती है सच्ची ख़ुशी और तसल्ली।' 
+                : 'Good food is the foundation of genuine happiness and warmth.'}
             </p>
             <p>
               {lang === 'mr' 
-                ? 'धायरी, पुणे येथे प्रेमाने तयार • विद्या दांडेकर यांच्यासाठी डिझाइन केलेले' 
+                ? 'परंपरेचा गोडवा • प्रत्येक घासात प्रेमाचा स्वाद • पुणे' 
                 : lang === 'hi' 
-                ? 'धायरी, पुणे में प्यार से निर्मित • विद्या दांडेकर के लिए डिज़ाइन किया गया' 
-                : 'Handmade with Love in Dhayari, Pune • Designed for Vidya Dandekar'}
+                ? 'परंपरा का स्वाद • हर निवाले में प्यार का अहसास • पुणे' 
+                : 'Crafted with Pure Love • Tradition in Every Bite • Pune'}
             </p>
           </div>
 

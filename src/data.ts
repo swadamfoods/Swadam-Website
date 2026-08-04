@@ -21,9 +21,9 @@ export const SNACK_PRODUCTS: SnackProduct[] = [
     longDescription: 'Handcrafted by Vidya Dandekar in Dhayari, Pune using traditional double-filtered refining techniques. Our Premium Patal Poha Chivda features thin flaked rice roasted to delicate golden perfection, tossed with crunch-roasted peanuts, rich cashew halves, thin dried coconut slices, fresh curry leaves, and a secret home-ground Puneri spice blend. Light, digestible, non-greasy, and completely free of artificial preservatives, vanaspati, or colorings.',
     pricing: [
       { weight: '1 Pack (200g)', price: 90 },
-      { weight: '2 Packs (400g)', price: 175 },
-      { weight: '3 Packs (600g)', price: 260 },
-      { weight: '1kg Box (5 x 200g Packs)', price: 425 }
+      { weight: '2 Packs (400g)', price: 180 },
+      { weight: '3 Packs (600g)', price: 270 },
+      { weight: '1kg Box (5 x 200g Packs)', price: 450 }
     ],
     defaultWeight: '1 Pack (200g)',
     imageFileName: 'patal-poha-chivda.jpg',
