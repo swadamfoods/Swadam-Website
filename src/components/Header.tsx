@@ -49,21 +49,21 @@ export function Header({
   return (
     <>
       {/* Desktop & Mobile Glass Pill Header Navigation */}
-      <nav className="fixed top-3 sm:top-6 left-2 right-2 sm:left-[5%] sm:right-[5%] px-3 py-2 sm:px-6 sm:py-3 bg-[var(--surface)] backdrop-blur-xl border border-[var(--border)] rounded-full flex justify-between items-center z-50 shadow-[0_10px_40px_var(--shadow)] transition-all duration-350 max-w-7xl mx-auto">
+      <nav className="fixed top-3 sm:top-6 left-2 right-2 sm:left-[5%] sm:right-[5%] px-2.5 py-1.5 sm:px-6 sm:py-3 bg-[var(--surface)] backdrop-blur-xl border border-[var(--border)] rounded-full flex justify-between items-center z-50 shadow-[0_10px_40px_var(--shadow)] transition-all duration-350 max-w-7xl mx-auto">
         {/* Logo Container */}
         <div 
-          className="flex items-center gap-1.5 sm:gap-3 cursor-pointer select-none min-w-0 shrink"
+          className="flex items-center gap-1.5 sm:gap-3 cursor-pointer select-none shrink-0"
           onClick={() => handleNavClick('home')}
         >
           <img 
             src="/swadam-logo.png" 
             alt="Swadam Foods Logo" 
-            className="h-8 w-8 sm:h-10 sm:w-10 rounded-full border border-[var(--border)] bg-[#fffcf9] object-contain p-0.5 shrink-0"
+            className="h-7 w-7 xs:h-8 xs:w-8 sm:h-10 sm:w-10 rounded-full border border-[var(--border)] bg-[#fffcf9] object-contain p-0.5 shrink-0"
             onError={(e) => {
               (e.currentTarget as HTMLImageElement).style.visibility = 'hidden';
             }}
           />
-          <span className="logo-text font-cursive text-[1.2rem] xs:text-[1.4rem] sm:text-[1.8rem] md:text-[2.1rem] text-[var(--gold)] drop-shadow-sm font-normal tracking-[0.2px] leading-none transition-transform duration-300 hover:scale-[1.03] truncate min-w-0">
+          <span className="logo-text font-cursive text-[1.15rem] xs:text-[1.35rem] sm:text-[1.8rem] md:text-[2.1rem] text-[var(--gold)] drop-shadow-sm font-normal tracking-[0.2px] leading-tight py-1 whitespace-nowrap shrink-0 transition-transform duration-300 hover:scale-[1.03]">
             Swadam Foods
           </span>
         </div>

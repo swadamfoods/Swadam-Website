@@ -11,6 +11,12 @@
   font-family: "Great Vibes", "Dancing Script", "Alex Brush", "Satisfy", "Pacifico", cursive !important;
 }
 
+.logo-text {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: visible !important;
+}
+
 :root {
   /* Dark Theme (Default) */
   --bg: #090605;
